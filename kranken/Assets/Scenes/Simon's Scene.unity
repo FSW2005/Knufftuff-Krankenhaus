@@ -413,5 +413,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c346a73bcc087c64d9a1ce04d17f67c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1635808526}
   mouseSensitivity: 2
