@@ -12,42 +12,59 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField]
     private bool isWalingInCircles;
     private int currentPoint=0;
+    private float plusOrMinus = 1;
+    [SerializeField]
+    private Transform drawLineto;
 
     //private float angle;
     // Start is called before the first frame update
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        Movement();
+        Movement();
+    }
+    private void Movement()
+    {
         if (Mathf.Round(transform.position.x) == Mathf.Round(movementPoints[currentPoint].position.x) && Mathf.Round(transform.position.z) == Mathf.Round(movementPoints[currentPoint].position.z))
         {
-            if(currentPoint >= movementPoints.Length - 1)
+            if (isWalingInCircles)
             {
-                if (isWalingInCircles)
+                if (currentPoint >= movementPoints.Length - 1)
                 {
                     currentPoint = 0;
                 }
                 else
                 {
-
+                    currentPoint += 1;
                 }
-                currentPoint = 0;
+
             }
             else
             {
-                currentPoint += 1;
+                if (currentPoint >= movementPoints.Length - 1 || currentPoint <= 0f && plusOrMinus < 0)
+                {
+                    plusOrMinus = plusOrMinus * (-1f);
+                }
+
+                currentPoint = (int)((float)currentPoint + plusOrMinus);
             }
+
         }
 
-        transform.LookAt(new Vector3(movementPoints[currentPoint].position.x,0,movementPoints[currentPoint].position.z),transform.up);
+        transform.LookAt(new Vector3(movementPoints[currentPoint].position.x,0,movementPoints[currentPoint].position.z), transform.up);
         rb.velocity = transform.forward * speed;
-        /* angle = Mathf.Atan2(movementPoints[currentPoint].position.z - transform.position.z, movementPoints[currentPoint].position.x - transform.position.x) * Mathf.Rad2Deg;
-       transform.rotation = Quaternion.Euler(Vector3.Slerp(transform.position, new Vector3(0, -angle, 0),0.1f));*/
-
 
     }
+    /*private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.blue;
+        Gizmos.DrawLine(transform.position, drawLineto.position);
+    }*/
 }
