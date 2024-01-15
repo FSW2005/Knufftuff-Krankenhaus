@@ -13,11 +13,19 @@ public class EnemyMovement : MonoBehaviour
     private bool isWalingInCircles;
     private int currentPoint=0;
     private float plusOrMinus = 1;
+    [SerializeField]
+    private float rotationSpeed;
   
-
+    //Following the player
     [SerializeField]
     private float followPlayerFor;
     private float followPlayerTimer=0;
+
+    //Going to the closest point after following the player
+    private float currentBestDistance = 1000000000000000;
+    private bool foundNearestPoint= false;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,8 +41,12 @@ public class EnemyMovement : MonoBehaviour
 
         if (gameObject.GetComponent<EnemySight>().sawPlayer)
         {
+            foundNearestPoint = false;
             followPlayerTimer = followPlayerFor;
-            transform.LookAt(new Vector3(gameObject.GetComponent<EnemySight>().hit.transform.gameObject.transform.position.x, 0, gameObject.GetComponent<EnemySight>().hit.transform.gameObject.transform.position.z), transform.up);
+            Vector3 relativePos = GetComponent<EnemySight>().hit.transform.gameObject.transform.position - transform.position;
+            transform.rotation = Quaternion.LookRotation(relativePos, Vector3.up);
+            print(relativePos);
+            //transform.LookAt(new Vector3(gameObject.GetComponent<EnemySight>().hit.transform.gameObject.transform.position.x, 0, gameObject.GetComponent<EnemySight>().hit.transform.gameObject.transform.position.z), transform.up);
 
         }
         else
@@ -43,9 +55,29 @@ public class EnemyMovement : MonoBehaviour
         }
         if(!(followPlayerTimer > 0))
         {
+            if (!foundNearestPoint)
+            {
+            //FindNearestPoint();
+            }
+
             NormalMovement();
         }
 
+
+    }
+    private void FindNearestPoint()
+    {
+        for (int i = 0; i <= movementPoints.Length-1; i++)
+        {
+            if(currentBestDistance > Vector3.Distance(movementPoints[i].position, transform.position))
+            {
+                currentBestDistance = Vector3.Distance(movementPoints[i].position, transform.position);
+                currentPoint = i;
+                print(currentPoint);
+                print(currentBestDistance);
+            }
+        }
+        foundNearestPoint = true;
 
     }
     private void NormalMovement()
@@ -76,7 +108,9 @@ public class EnemyMovement : MonoBehaviour
 
         }
 
-        transform.LookAt(new Vector3(movementPoints[currentPoint].position.x,0,movementPoints[currentPoint].position.z), transform.up);
+        Vector3 relativePos = movementPoints[currentPoint].position - transform.position;
+        Quaternion rotation = Quaternion.LookRotation(relativePos, Vector3.up);
+        transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * rotationSpeed);
 
     }
     /*private void OnDrawGizmos()
