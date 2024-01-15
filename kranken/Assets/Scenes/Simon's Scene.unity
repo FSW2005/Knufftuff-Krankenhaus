@@ -285,6 +285,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03d484c6233d5794b9a63972133ad49c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startPoint: 1
+  beamLegnth: 7
+  baseWidth: 0.1
+  endWidth: 2
 --- !u!1 &995542438
 GameObject:
   m_ObjectHideFlags: 0
