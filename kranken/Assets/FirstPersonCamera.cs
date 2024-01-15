@@ -6,7 +6,8 @@ public class FirstPersonCamera : MonoBehaviour
 {
 
     // Variables
-    public Transform player;
+    [SerializeField]
+    public GameObject player;
     public float mouseSensitivity = 2f;
     float cameraVerticalRotation = 0f;
 
@@ -24,7 +25,6 @@ public class FirstPersonCamera : MonoBehaviour
 
     void Update()
     {
-        player = GetComponentInParent<Transform>();
         // Collect Mouse Input
 
         float inputX = Input.GetAxis("Mouse X") * mouseSensitivity*10;
@@ -39,7 +39,8 @@ public class FirstPersonCamera : MonoBehaviour
 
         // Rotate the Player Object and the Camera around its Y axis
 
-        player.Rotate(Vector3.up * inputX);
+        //player.Rotate(Vector3.up * inputX);
+        player.transform.Rotate(Vector3.up * inputX);
 
     }
 }
