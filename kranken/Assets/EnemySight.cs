@@ -7,6 +7,9 @@ public class EnemySight : MonoBehaviour
     private Vector3 randomCircle;
     [SerializeField]
     private float startPoint, beamLegnth, baseWidth, endWidth;
+    public RaycastHit hit;
+    public bool sawPlayer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,10 +19,20 @@ public class EnemySight : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
-        for (int i = 0; i < 20; i++)
+        for (int i = 0; i < 200; i++)
         {
             randomCircle = new Vector3(Random.insideUnitCircle.x, Random.insideUnitCircle.y, Random.insideUnitCircle.y);
             Debug.DrawRay(transform.forward*startPoint+transform.position+randomCircle*baseWidth, (transform.forward * beamLegnth) + randomCircle*endWidth, Color.green, 0,true);
+            // Does the ray intersect any objects excluding the player layer
+            if (Physics.Raycast(transform.forward * startPoint + transform.position + randomCircle * baseWidth, (transform.forward * beamLegnth) + randomCircle * endWidth, out hit, Mathf.Infinity))
+            {
+                sawPlayer = true;
+                i = 201;
+            }
+            else
+            {
+                sawPlayer = false;
+            }
         }
     }
     void Update()

@@ -13,24 +13,42 @@ public class EnemyMovement : MonoBehaviour
     private bool isWalingInCircles;
     private int currentPoint=0;
     private float plusOrMinus = 1;
-    [SerializeField]
-    private Transform drawLineto;
+  
 
-    //private float angle;
+    [SerializeField]
+    private float followPlayerFor;
+    private float followPlayerTimer=0;
     // Start is called before the first frame update
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
         
     }
+    
 
     // Update is called once per frame
     void Update()
     {
-        Movement();
-        Movement();
+        rb.velocity = transform.forward * speed;
+
+        if (gameObject.GetComponent<EnemySight>().sawPlayer)
+        {
+            followPlayerTimer = followPlayerFor;
+            transform.LookAt(new Vector3(gameObject.GetComponent<EnemySight>().hit.transform.gameObject.transform.position.x, 0, gameObject.GetComponent<EnemySight>().hit.transform.gameObject.transform.position.z), transform.up);
+
+        }
+        else
+        {
+            followPlayerTimer -= Time.deltaTime;
+        }
+        if(!(followPlayerTimer > 0))
+        {
+            NormalMovement();
+        }
+
+
     }
-    private void Movement()
+    private void NormalMovement()
     {
         if (Mathf.Round(transform.position.x) == Mathf.Round(movementPoints[currentPoint].position.x) && Mathf.Round(transform.position.z) == Mathf.Round(movementPoints[currentPoint].position.z))
         {
@@ -59,7 +77,6 @@ public class EnemyMovement : MonoBehaviour
         }
 
         transform.LookAt(new Vector3(movementPoints[currentPoint].position.x,0,movementPoints[currentPoint].position.z), transform.up);
-        rb.velocity = transform.forward * speed;
 
     }
     /*private void OnDrawGizmos()
