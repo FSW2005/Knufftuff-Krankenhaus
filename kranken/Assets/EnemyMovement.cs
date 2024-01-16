@@ -44,8 +44,7 @@ public class EnemyMovement : MonoBehaviour
             foundNearestPoint = false;
             followPlayerTimer = followPlayerFor;
             Vector3 relativePos = GetComponent<EnemySight>().hit.transform.gameObject.transform.position - transform.position;
-            transform.rotation = Quaternion.LookRotation(relativePos, Vector3.up);
-            print(relativePos);
+            transform.rotation = Quaternion.LookRotation(new Vector3(relativePos.x,0,relativePos.z), Vector3.up);
             //transform.LookAt(new Vector3(gameObject.GetComponent<EnemySight>().hit.transform.gameObject.transform.position.x, 0, gameObject.GetComponent<EnemySight>().hit.transform.gameObject.transform.position.z), transform.up);
 
         }
@@ -109,7 +108,7 @@ public class EnemyMovement : MonoBehaviour
         }
 
         Vector3 relativePos = movementPoints[currentPoint].position - transform.position;
-        Quaternion rotation = Quaternion.LookRotation(relativePos, Vector3.up);
+        Quaternion rotation = Quaternion.LookRotation(new Vector3(relativePos.x, 0, relativePos.z), Vector3.up);
         transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * rotationSpeed);
 
     }
