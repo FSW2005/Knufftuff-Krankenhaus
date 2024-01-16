@@ -5,117 +5,89 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class FelixMovement : MonoBehaviour
 {
-    public float walkSpeed = 2.0f;
-    public float sprintSpeed = 5.0f;
-    public float crouchSpeed = 1.0f;
+    public float moveSpeed = 5.0f;
     public float rotationSpeed = 180.0f;
     public float crouchHeight = 0.5f;
     public float standingHeight = 2.0f;
     public float sprintSpeedMultiplier = 2.0f;
-    public float maxStamina = 100.0f;
-    public float staminaRegenerationRate = 10.0f;
 
     private CharacterController characterController;
     private bool isSprinting = false;
     private bool isCrouching = false;
-    private float currentStamina;
+
+    private Camera playerCamera;
+    private bool isRotatingCamera = false;
+    private Vector2 lastMousePosition;
 
     void Start()
     {
         characterController = GetComponent<CharacterController>();
-        currentStamina = maxStamina;
+        playerCamera = Camera.main;
     }
 
     void Update()
     {
         HandleMovement();
-
-        // Toggle sprint on/off with Left Shift key
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            StartSprint();
-        }
-        else if (Input.GetKeyUp(KeyCode.LeftShift))
-        {
-            StopSprint();
-        }
-
-        // Toggle crouch on/off with "C" key
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            ToggleCrouch();
-        }
-
-        // Regenerate stamina passively when not running
-        if (!isSprinting && currentStamina < maxStamina)
-        {
-            currentStamina += staminaRegenerationRate * Time.deltaTime;
-            currentStamina = Mathf.Clamp(currentStamina, 0f, maxStamina);
-        }
+        HandleCameraRotation();
     }
 
     void HandleMovement()
     {
-        // Input handling for movement
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
-        // Determine the movement direction based on input
-        Vector3 moveDirection = new Vector3(horizontalInput, 0.0f, verticalInput).normalized;
+        Vector3 cameraForward = Vector3.Scale(playerCamera.transform.forward, new Vector3(1, 0, 1)).normalized;
+        Vector3 moveDirection = (verticalInput * cameraForward + horizontalInput * playerCamera.transform.right).normalized;
 
-        // Rotate towards movement direction
         if (moveDirection != Vector3.zero)
         {
             Quaternion newRotation = Quaternion.LookRotation(moveDirection);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, newRotation, rotationSpeed * Time.deltaTime);
         }
 
-        // Determine the speed based on the current state (walk, sprint, crouch)
-        float speed = walkSpeed;
+        float speed = moveSpeed;
 
         if (isCrouching)
         {
-            speed = crouchSpeed;
+            speed /= 2.0f;
         }
-        else if (isSprinting && currentStamina > 0)
+        else if (isSprinting && Input.GetKey(KeyCode.LeftShift))
         {
-            speed = sprintSpeed * sprintSpeedMultiplier;
-            currentStamina -= Time.deltaTime;
+            speed *= sprintSpeedMultiplier;
         }
 
-        // Move the player
-        Vector3 movement = transform.forward * speed * Time.deltaTime * verticalInput;
-
-        // Apply crouch height adjustment
-        if (isCrouching)
-        {
-            characterController.height = crouchHeight;
-        }
-        else
-        {
-            characterController.height = standingHeight;
-        }
-
-        // Move the character controller
+        Vector3 movement = moveDirection * speed * Time.deltaTime;
         characterController.Move(movement);
     }
 
-    void StartSprint()
+    void HandleCameraRotation()
     {
-        if (!isCrouching && currentStamina > 0)
+        if (Input.GetMouseButtonDown(0))
         {
-            isSprinting = true;
+            isRotatingCamera = true;
+            lastMousePosition = Input.mousePosition;
+        }
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            isRotatingCamera = false;
+        }
+
+        if (isRotatingCamera)
+        {
+            Vector2 deltaMousePosition = (Vector2)Input.mousePosition - lastMousePosition;
+            lastMousePosition = Input.mousePosition;
+
+            float rotationX = deltaMousePosition.y * rotationSpeed * Time.deltaTime;
+            float rotationY = -deltaMousePosition.x * rotationSpeed * Time.deltaTime;
+
+            playerCamera.transform.Rotate(Vector3.up * rotationY);
+            playerCamera.transform.Rotate(Vector3.right * rotationX);
+
+            // Optionally, you can limit the camera rotation in the X-axis to prevent flipping
+            Vector3 currentRotation = playerCamera.transform.eulerAngles;
+            currentRotation.x = Mathf.Clamp(currentRotation.x, 0.0f, 90.0f);
+            playerCamera.transform.eulerAngles = currentRotation;
         }
     }
-
-    void StopSprint()
-    {
-        isSprinting = false;
-    }
-
-    void ToggleCrouch()
-    {
-        isCrouching = !isCrouching;
-    }
 }
-
