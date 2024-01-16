@@ -20,6 +20,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField]
     private float followPlayerFor;
     private float followPlayerTimer=0;
+    private bool isStunned;
 
     //Going to the closest point after following the player
     private float currentBestDistance = 1000000000000000;
@@ -37,31 +38,38 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.velocity = transform.forward * speed;
-
-        if (gameObject.GetComponent<EnemySight>().sawPlayer)
+        isStunned = GameObject.FindGameObjectWithTag("FlashLight").GetComponent<Flashlight>().enemyStunned;
+        if (isStunned)
         {
-            foundNearestPoint = false;
-            followPlayerTimer = followPlayerFor;
-            Vector3 relativePos = GetComponent<EnemySight>().hit.transform.gameObject.transform.position - transform.position;
-            transform.rotation = Quaternion.LookRotation(new Vector3(relativePos.x,0,relativePos.z), Vector3.up);
-            //transform.LookAt(new Vector3(gameObject.GetComponent<EnemySight>().hit.transform.gameObject.transform.position.x, 0, gameObject.GetComponent<EnemySight>().hit.transform.gameObject.transform.position.z), transform.up);
-
+            rb.velocity = new Vector3(0, 0, 0);
         }
         else
         {
-            followPlayerTimer -= Time.deltaTime;
-        }
-        if(!(followPlayerTimer > 0))
-        {
-            if (!foundNearestPoint)
+            rb.velocity = transform.forward * speed;
+
+            if (gameObject.GetComponent<EnemySight>().sawPlayer)
             {
-            //FindNearestPoint();
+                foundNearestPoint = false;
+                followPlayerTimer = followPlayerFor;
+                Vector3 relativePos = GetComponent<EnemySight>().hit.transform.gameObject.transform.position - transform.position;
+                transform.rotation = Quaternion.LookRotation(new Vector3(relativePos.x, 0, relativePos.z), Vector3.up);
+                //transform.LookAt(new Vector3(gameObject.GetComponent<EnemySight>().hit.transform.gameObject.transform.position.x, 0, gameObject.GetComponent<EnemySight>().hit.transform.gameObject.transform.position.z), transform.up);
+
             }
+            else
+            {
+                followPlayerTimer -= Time.deltaTime;
+            }
+            if (!(followPlayerTimer > 0))
+            {
+                if (!foundNearestPoint)
+                {
+                    //FindNearestPoint();
+                }
 
-            NormalMovement();
+                NormalMovement();
+            }
         }
-
 
     }
     private void FindNearestPoint()
