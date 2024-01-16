@@ -346,6 +346,7 @@
 "Assets/EnemyMovement.cs"
 "Assets/EnemySight.cs"
 "Assets/FirstPersonCamera.cs"
+"Assets/SimonsPlayer.cs"
 -langversion:9.0
 
 /deterministic
