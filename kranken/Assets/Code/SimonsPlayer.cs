@@ -20,7 +20,7 @@ public class SimonsPlayer : MonoBehaviour
     Left
     Right
     Sprint
-    Crouch
+
     */
     // Start is called before the first frame update
     void Start()

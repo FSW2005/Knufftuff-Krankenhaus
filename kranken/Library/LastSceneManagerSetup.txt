@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Simon's Scene.unity
+- path: Assets/KrankenFelixScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
