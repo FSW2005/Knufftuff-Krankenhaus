@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(CharacterController))]
 public class FelixMovement : MonoBehaviour
 {
     public float moveSpeed = 5.0f;
@@ -21,12 +20,13 @@ public class FelixMovement : MonoBehaviour
     private Camera playerCamera;
     private bool isRotatingCamera = false;
     private Vector2 lastMousePosition;
-
+    // Bas rörelse för spelarkontrolen
     void Start()
     {
         characterController = GetComponent<CharacterController>();
         playerCamera = Camera.main;
         currentStamina = maxStamina;
+        // Addar "stamina" komponenten
     }
 
     void Update()
@@ -63,7 +63,7 @@ public class FelixMovement : MonoBehaviour
         }
         else if (currentStamina < maxStamina)
         {
-            // Regenerate stamina passively when not sprinting
+            // Återhämta och få tillbaka "Stamina" då en inte springer
             currentStamina += staminaRegenerationRate * Time.deltaTime;
             currentStamina = Mathf.Clamp(currentStamina, 0f, maxStamina);
         }
@@ -71,7 +71,7 @@ public class FelixMovement : MonoBehaviour
         Vector3 movement = moveDirection * speed * Time.deltaTime;
         characterController.Move(movement);
     }
-
+    // Mer detaljerad rörelse för spelarkontrolen
     void HandleCameraRotation()
     {
         if (Input.GetMouseButtonDown(0))
@@ -96,16 +96,16 @@ public class FelixMovement : MonoBehaviour
             playerCamera.transform.Rotate(Vector3.up * rotationY);
             playerCamera.transform.Rotate(Vector3.right * rotationX);
 
-            // Optionally, you can limit the camera rotation in the X-axis to prevent flipping
+            // Kan begränsa kamerans rotation på X-axeln som bör stoppa den från att göra vålt
             Vector3 currentRotation = playerCamera.transform.eulerAngles;
             currentRotation.x = Mathf.Clamp(currentRotation.x, -90.0f, 90.0f);
             playerCamera.transform.eulerAngles = currentRotation;
         }
     }
-
+    // Kamerans rotations funktioner, kameran ska följa musen
     void HandleActions()
     {
-        // Sprint action (Hold "Left Shift" key)
+        // Sprint ("Left Shift")
         if (Input.GetKey(KeyCode.LeftShift))
         {
             StartSprint();
@@ -115,7 +115,7 @@ public class FelixMovement : MonoBehaviour
             StopSprint();
         }
 
-        // Crouch action (Hold "Left Ctrl" key)
+        // Crouch ("Left Ctrl")
         if (Input.GetKey(KeyCode.LeftControl))
         {
             ToggleCrouch();
@@ -135,7 +135,7 @@ public class FelixMovement : MonoBehaviour
             characterController.height = standingHeight;
         }
     }
-
+    // Ändrar höjden på spelaren
     void StartSprint()
     {
         if (!isCrouching && currentStamina > 0)
@@ -143,9 +143,10 @@ public class FelixMovement : MonoBehaviour
             isSprinting = true;
         }
     }
-
+    // kan inte göra "Sprint" då en är i "crouch"
     void StopSprint()
     {
         isSprinting = false;
     }
+    // Om en inte håller "Left Shift" springer man inte
 }

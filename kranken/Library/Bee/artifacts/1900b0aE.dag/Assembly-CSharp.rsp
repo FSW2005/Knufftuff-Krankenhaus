@@ -353,7 +353,8 @@
 "Assets/Code/Flashlight.cs"
 "Assets/Code/Interact.cs"
 "Assets/Code/Inventory.cs"
-"Assets/Code/PaperNotes.cs"
+"Assets/Code/NotesInteract.cs"
+"Assets/Code/NotesInventory.cs"
 "Assets/Code/SimonsPlayer.cs"
 -langversion:9.0
 
