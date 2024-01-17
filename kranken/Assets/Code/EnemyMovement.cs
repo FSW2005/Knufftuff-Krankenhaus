@@ -73,7 +73,8 @@ public class EnemyMovement : MonoBehaviour
 
                 if (!foundNearestPoint)
                 {
-                    //FindNearestPoint();
+                    currentBestDistance = 1000000000000;
+                    FindNearestPoint();
                 }
                 NormalMovement();
             }
@@ -86,14 +87,13 @@ public class EnemyMovement : MonoBehaviour
     {
         for (int i = 0; i <= movementPoints.Length-1; i++)
         {
-            if(currentBestDistance > Vector3.Distance(movementPoints[i].position, transform.position))
+            if(currentBestDistance > Vector3.Distance(transform.position, movementPoints[i].position))
             {
-                currentBestDistance = Vector3.Distance(movementPoints[i].position, transform.position);
+                currentBestDistance = Vector3.Distance(transform.position, movementPoints[i].position);
                 currentPoint = i;
-                print(currentPoint);
-                print(currentBestDistance);
             }
         }
+        
         foundNearestPoint = true;
 
     }
@@ -131,9 +131,15 @@ public class EnemyMovement : MonoBehaviour
 
     }
     
-    /*private void OnDrawGizmos()
+    private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;
-        Gizmos.DrawLine(transform.position, drawLineto.position);
-    }*/
+        for (int i = 0; i < movementPoints.Length-1; i++)
+        {
+            if(i != movementPoints.Length - 1)
+            {
+                Gizmos.DrawLine(movementPoints[i].position, movementPoints[i + 1].position);
+            }
+        }
+    }
 }
