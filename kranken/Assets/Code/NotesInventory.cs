@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NotesInventory : MonoBehaviour
+public class NotesInventory : Inventory
 {
     // Start is called before the first frame update
     void Start()
