@@ -18,10 +18,8 @@ public class EnemyMovement : MonoBehaviour
   
     //Following the player
     [SerializeField]
-    private float followPlayerFor,speedMulti;
-    private float followPlayerTimer=0,speedMultiCounter;
-    private bool isStunned;
-    private Vector3 playerPos;
+    private float followPlayerFor;
+    private float followPlayerTimer=0;
 
     //Going to the closest point after following the player
     private float currentBestDistance = 1000000000000000;
@@ -39,61 +37,45 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        isStunned = GameObject.FindGameObjectWithTag("FlashLight").GetComponent<Flashlight>().enemyStunned;
-        if (isStunned)
+        rb.velocity = transform.forward * speed;
+
+        if (gameObject.GetComponent<EnemySight>().sawPlayer)
         {
-            rb.velocity = new Vector3(0, 0, 0);
-            followPlayerTimer = 0;
+            foundNearestPoint = false;
+            followPlayerTimer = followPlayerFor;
+            Vector3 relativePos = GetComponent<EnemySight>().hit.transform.gameObject.transform.position - transform.position;
+            transform.rotation = Quaternion.LookRotation(new Vector3(relativePos.x,0,relativePos.z), Vector3.up);
+            //transform.LookAt(new Vector3(gameObject.GetComponent<EnemySight>().hit.transform.gameObject.transform.position.x, 0, gameObject.GetComponent<EnemySight>().hit.transform.gameObject.transform.position.z), transform.up);
+
         }
         else
         {
-
-            if (gameObject.GetComponent<EnemySight>().sawPlayer)
-            {
-                foundNearestPoint = false;
-                followPlayerTimer = followPlayerFor;
-                playerPos = GetComponent<EnemySight>().hit.transform.gameObject.transform.position - transform.position;
-
-                //transform.LookAt(new Vector3(gameObject.GetComponent<EnemySight>().hit.transform.gameObject.transform.position.x, 0, gameObject.GetComponent<EnemySight>().hit.transform.gameObject.transform.position.z), transform.up);
-
-            }
-            else
-            {
-                followPlayerTimer -= Time.deltaTime;
-            }
-
-            if (followPlayerTimer > 0)
-            {
-                transform.rotation = Quaternion.LookRotation(new Vector3(playerPos.x, 0, playerPos.z), Vector3.up);
-                speedMultiCounter = speedMulti;
-            }
-            else
-            {
-                speedMultiCounter = 1;
-
-                if (!foundNearestPoint)
-                {
-                    currentBestDistance = 1000000000000;
-                    FindNearestPoint();
-                }
-                NormalMovement();
-            }
-            rb.velocity = transform.forward * speed * speedMultiCounter;
-
+            followPlayerTimer -= Time.deltaTime;
         }
+        if(!(followPlayerTimer > 0))
+        {
+            if (!foundNearestPoint)
+            {
+            //FindNearestPoint();
+            }
+
+            NormalMovement();
+        }
+
 
     }
     private void FindNearestPoint()
     {
         for (int i = 0; i <= movementPoints.Length-1; i++)
         {
-            if(currentBestDistance > Vector3.Distance(transform.position, movementPoints[i].position))
+            if(currentBestDistance > Vector3.Distance(movementPoints[i].position, transform.position))
             {
-                currentBestDistance = Vector3.Distance(transform.position, movementPoints[i].position);
+                currentBestDistance = Vector3.Distance(movementPoints[i].position, transform.position);
                 currentPoint = i;
+                print(currentPoint);
+                print(currentBestDistance);
             }
         }
-        
         foundNearestPoint = true;
 
     }
@@ -130,16 +112,9 @@ public class EnemyMovement : MonoBehaviour
         transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * rotationSpeed);
 
     }
-    
-    private void OnDrawGizmos()
+    /*private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;
-        for (int i = 0; i < movementPoints.Length-1; i++)
-        {
-            if(i != movementPoints.Length - 1)
-            {
-                Gizmos.DrawLine(movementPoints[i].position, movementPoints[i + 1].position);
-            }
-        }
-    }
+        Gizmos.DrawLine(transform.position, drawLineto.position);
+    }*/
 }

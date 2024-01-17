@@ -318,8 +318,8 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.XDocument.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
--r:"C:/Users/simon.lowenhielm/Desktop/Projekt 2024/Knufftuff-Krankenhaus/kranken/Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll"
--r:"C:/Users/simon.lowenhielm/Desktop/Projekt 2024/Knufftuff-Krankenhaus/kranken/Library/PackageCache/com.unity.visualscripting@1.9.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"C:/Users/felix.wikstrom/Documents/GitHub/Knufftuff-Krankenhaus/kranken/Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll"
+-r:"C:/Users/felix.wikstrom/Documents/GitHub/Knufftuff-Krankenhaus/kranken/Library/PackageCache/com.unity.visualscripting@1.9.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
@@ -345,6 +345,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Code/AudioManager.cs"
 "Assets/Code/CharacterMovement.cs"
+"Assets/Code/Door.cs"
 "Assets/Code/EnemyMovement.cs"
 "Assets/Code/EnemySight.cs"
 "Assets/Code/FelixMovement.cs"
@@ -352,6 +353,7 @@
 "Assets/Code/Flashlight.cs"
 "Assets/Code/Interact.cs"
 "Assets/Code/Inventory.cs"
+"Assets/Code/PaperNotes.cs"
 "Assets/Code/SimonsPlayer.cs"
 -langversion:9.0
 
