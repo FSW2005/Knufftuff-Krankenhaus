@@ -350,7 +350,7 @@
 "Assets/Code/FelixMovement.cs"
 "Assets/Code/FirstPersonCamera.cs"
 "Assets/Code/Flashlight.cs"
-"Assets/Code/Interact.cs"
+"Assets/Code/Interactable.cs"
 "Assets/Code/Inventory.cs"
 "Assets/Code/SimonsPlayer.cs"
 -langversion:9.0
