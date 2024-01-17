@@ -1,152 +1,128 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class FelixMovement : MonoBehaviour
 {
-    public float moveSpeed = 5.0f;
-    public float rotationSpeed = 180.0f;
+    public float walkSpeed = 5f;
+    public float sprintSpeed = 8f;
+    public float crouchSpeed = 3f;
+    public float rotationSpeed = 2f;
+    public float yRotationLimit = 88f;
+    public float staminaMax = 100f;
+    public float staminaRegenRate = 10f;
     public float crouchHeight = 0.5f;
-    public float standingHeight = 2.0f;
-    public float sprintSpeedMultiplier = 2.0f;
-    public float maxStamina = 100.0f;
-    public float staminaRegenerationRate = 10.0f;
+    public float standingHeight = 1.7f;
+    public float crouchTransitionDelay = 0.5f;
 
-    private CharacterController characterController;
-    private bool isSprinting = false;
-    private bool isCrouching = false;
+    private float currentSpeed;
     private float currentStamina;
+    private bool isSprinting;
+    private bool isCrouching;
+    private Coroutine crouchCoroutine;
 
-    private Camera playerCamera;
-    private bool isRotatingCamera = false;
-    private Vector2 lastMousePosition;
-    // Bas rörelse för spelarkontrolen
     void Start()
     {
-        characterController = GetComponent<CharacterController>();
-        playerCamera = Camera.main;
-        currentStamina = maxStamina;
-        // Addar "stamina" komponenten
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        currentSpeed = walkSpeed;
+        currentStamina = staminaMax;
+        isSprinting = false;
+        isCrouching = false;
     }
 
     void Update()
     {
         HandleMovement();
-        HandleCameraRotation();
+        HandleRotation();
         HandleActions();
     }
 
     void HandleMovement()
     {
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
+        float horizontal = Input.GetAxis("Horizontal");
+        float vertical = Input.GetAxis("Vertical");
 
-        Vector3 cameraForward = Vector3.Scale(playerCamera.transform.forward, new Vector3(1, 0, 1)).normalized;
-        Vector3 moveDirection = (verticalInput * cameraForward + horizontalInput * playerCamera.transform.right).normalized;
+        Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
-        if (moveDirection != Vector3.zero)
+        if (isSprinting && Input.GetKey(KeyCode.LeftShift) && currentStamina > 0)
         {
-            Quaternion newRotation = Quaternion.LookRotation(cameraForward);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, newRotation, rotationSpeed * Time.deltaTime);
-        }
-
-        float speed = moveSpeed;
-
-        if (isCrouching)
-        {
-            speed /= 2.0f;
-        }
-        else if (isSprinting && currentStamina > 0)
-        {
-            speed *= sprintSpeedMultiplier;
             currentStamina -= Time.deltaTime;
+            currentSpeed = sprintSpeed;
         }
-        else if (currentStamina < maxStamina)
+        else
         {
-            // Återhämta och få tillbaka "Stamina" då en inte springer
-            currentStamina += staminaRegenerationRate * Time.deltaTime;
-            currentStamina = Mathf.Clamp(currentStamina, 0f, maxStamina);
+            currentStamina += Time.deltaTime * staminaRegenRate;
+            currentSpeed = isCrouching ? crouchSpeed : walkSpeed;
         }
 
-        Vector3 movement = moveDirection * speed * Time.deltaTime;
-        characterController.Move(movement);
+        currentStamina = Mathf.Clamp(currentStamina, 0f, staminaMax);
+
+        // Get the y-rotation of the camera
+        float cameraYRotation = Camera.main.transform.eulerAngles.y;
+
+        // Calculate the move direction based on camera's y-rotation
+        Vector3 moveDirection = Quaternion.Euler(0f, cameraYRotation, 0f) * direction;
+
+        // Ignore vertical component for "W" and "S"
+        moveDirection.y = 0f;
+
+        // Normalize the vectors
+        moveDirection.Normalize();
+
+        // Use CharacterController for better control over movement
+        CharacterController controller = GetComponent<CharacterController>();
+        controller.Move(moveDirection * currentSpeed * Time.deltaTime);
     }
-    // Mer detaljerad rörelse för spelarkontrolen
-    void HandleCameraRotation()
+
+    void HandleRotation()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            isRotatingCamera = true;
-            lastMousePosition = Input.mousePosition;
-        }
+        float mouseX = Input.GetAxis("Mouse X") * rotationSpeed;
+        float mouseY = Input.GetAxis("Mouse Y") * rotationSpeed;
 
-        if (Input.GetMouseButtonUp(0))
-        {
-            isRotatingCamera = false;
-        }
+        transform.Rotate(Vector3.up, mouseX);
 
-        if (isRotatingCamera)
-        {
-            Vector2 deltaMousePosition = (Vector2)Input.mousePosition - lastMousePosition;
-            lastMousePosition = Input.mousePosition;
+        Camera mainCamera = Camera.main;
 
-            float rotationX = -deltaMousePosition.y * rotationSpeed * Time.deltaTime;
-            float rotationY = deltaMousePosition.x * rotationSpeed * Time.deltaTime;
+        Vector3 currentRotation = mainCamera.transform.rotation.eulerAngles;
+        currentRotation.x -= mouseY;
+        currentRotation.x = Mathf.Clamp(currentRotation.x, -yRotationLimit, yRotationLimit);
 
-            playerCamera.transform.Rotate(Vector3.up * rotationY);
-            playerCamera.transform.Rotate(Vector3.right * rotationX);
-
-            // Kan begränsa kamerans rotation på X-axeln som bör stoppa den från att göra vålt
-            Vector3 currentRotation = playerCamera.transform.eulerAngles;
-            currentRotation.x = Mathf.Clamp(currentRotation.x, -90.0f, 90.0f);
-            playerCamera.transform.eulerAngles = currentRotation;
-        }
+        mainCamera.transform.rotation = Quaternion.Euler(currentRotation);
     }
-    // Kamerans rotations funktioner, kameran ska följa musen
+
     void HandleActions()
     {
-        // Sprint ("Left Shift")
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.LeftControl) && !isCrouching)
         {
-            StartSprint();
-        }
-        else
-        {
-            StopSprint();
+            if (crouchCoroutine != null)
+                StopCoroutine(crouchCoroutine);
+
+            crouchCoroutine = StartCoroutine(Crouch());
         }
 
-        // Crouch ("Left Ctrl")
-        if (Input.GetKey(KeyCode.LeftControl))
+        if (Input.GetKeyUp(KeyCode.LeftControl) && isCrouching)
         {
-            ToggleCrouch();
+            if (crouchCoroutine != null)
+                StopCoroutine(crouchCoroutine);
+
+            crouchCoroutine = StartCoroutine(UnCrouch());
         }
     }
 
-    void ToggleCrouch()
+    IEnumerator Crouch()
     {
-        isCrouching = !isCrouching;
+        yield return new WaitForSeconds(crouchTransitionDelay);
+        isCrouching = true;
+        currentSpeed = crouchSpeed;
+        transform.localScale = new Vector3(1f, crouchHeight, 1f);
+    }
 
-        if (isCrouching)
-        {
-            characterController.height = crouchHeight;
-        }
-        else
-        {
-            characterController.height = standingHeight;
-        }
-    }
-    // Ändrar höjden på spelaren
-    void StartSprint()
+    IEnumerator UnCrouch()
     {
-        if (!isCrouching && currentStamina > 0)
-        {
-            isSprinting = true;
-        }
+        yield return new WaitForSeconds(crouchTransitionDelay);
+        isCrouching = false;
+        currentSpeed = walkSpeed;
+        transform.localScale = new Vector3(1f, standingHeight, 1f);
     }
-    // kan inte göra "Sprint" då en är i "crouch"
-    void StopSprint()
-    {
-        isSprinting = false;
-    }
-    // Om en inte håller "Left Shift" springer man inte
 }
+
