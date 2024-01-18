@@ -6,11 +6,36 @@ public class NotesInteract : Interact
 {
     // Additional properties specific to the Notes script can be added here
 
+    // Audio clip to play when interacting with the note
+    public AudioClip interactAudioClip;
+
+    // Reference to the AudioSource component
+    private AudioSource audioSource;
+
+    void Start()
+    {
+        // Add an AudioSource component to the GameObject if not already present
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+
+        // Set the audio clip for the AudioSource
+        audioSource.clip = interactAudioClip;
+
+        // Ensure the AudioSource does not play on awake
+        audioSource.playOnAwake = false;
+    }
+
     // Override the Interactable method from the base class
     public override void Interactable()
     {
         // Call the base Interactable method
         base.Interactable();
+
+        // Play the interaction audio clip
+        PlayInteractionAudio();
 
         // Check if the player is close enough to the note
         if (IsPlayerNearNote())
@@ -20,6 +45,17 @@ public class NotesInteract : Interact
 
             // Optionally: Remove the note from the scene or handle any other logic
             Destroy(gameObject);
+        }
+    }
+
+    // Method to play the interaction audio clip
+    private void PlayInteractionAudio()
+    {
+        // Check if an audio clip is assigned
+        if (interactAudioClip != null)
+        {
+            // Play the audio clip
+            audioSource.Play();
         }
     }
 
