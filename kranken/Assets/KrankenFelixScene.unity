@@ -214,6 +214,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &8070771
 Animator:
   serializedVersion: 5
@@ -1409,75 +1411,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 779b4077340a3bb42b1d78e6eaa83a19, type: 3}
   m_PrefabInstance: {fileID: 1378944390}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &103944573
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -10.660824
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 23.127537
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
-      propertyPath: m_Name
-      value: Idle_Animation_Combined (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
 --- !u!1001 &108639054
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1564,6 +1497,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &108639057
 Animator:
   serializedVersion: 5
@@ -2029,6 +1964,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9fce4c88aa99a364eb7687fe2ac47108, type: 3}
   m_PrefabInstance: {fileID: 134244049}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &135003606 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
+  m_PrefabInstance: {fileID: 1513838188}
+  m_PrefabAsset: {fileID: 0}
+--- !u!111 &135003607
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135003606}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 1827226128182048838, guid: 8408f8186201ef54ebf522269f4abe7e, type: 3}
+  m_Animations:
+  - {fileID: 1827226128182048838, guid: 8408f8186201ef54ebf522269f4abe7e, type: 3}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &136715994
 GameObject:
   m_ObjectHideFlags: 0
@@ -3034,6 +2990,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!1 &239680478 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9fce4c88aa99a364eb7687fe2ac47108, type: 3}
@@ -3082,7 +3040,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8408f8186201ef54ebf522269f4abe7e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.261019
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8408f8186201ef54ebf522269f4abe7e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3090,11 +3048,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8408f8186201ef54ebf522269f4abe7e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 37.2
+      value: 22.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8408f8186201ef54ebf522269f4abe7e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.70710677
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8408f8186201ef54ebf522269f4abe7e, type: 3}
       propertyPath: m_LocalRotation.x
@@ -3102,11 +3060,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8408f8186201ef54ebf522269f4abe7e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.70710677
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8408f8186201ef54ebf522269f4abe7e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8408f8186201ef54ebf522269f4abe7e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3122,7 +3080,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8408f8186201ef54ebf522269f4abe7e, type: 3}
       propertyPath: m_Name
-      value: Idle_Animation (1)
+      value: DELETEMarulc
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8408f8186201ef54ebf522269f4abe7e, type: 3}
@@ -3934,6 +3892,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &320313188
 Animator:
   serializedVersion: 5
@@ -4513,6 +4473,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &369984381
 Animator:
   serializedVersion: 5
@@ -5059,6 +5021,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &405555226
 Animator:
   serializedVersion: 5
@@ -5097,6 +5061,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &418565096
 Animator:
   serializedVersion: 5
@@ -5722,6 +5688,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &492091204
 Animator:
   serializedVersion: 5
@@ -5817,6 +5785,106 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: bb8728271bcb08f4b825c642d8129f22, type: 3}
   m_PrefabInstance: {fileID: 495530469}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &496154292
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 496154296}
+  - component: {fileID: 496154295}
+  - component: {fileID: 496154294}
+  - component: {fileID: 496154293}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &496154293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496154292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &496154294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496154292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &496154295
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496154292}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &496154296
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496154292}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &497511943 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 779b4077340a3bb42b1d78e6eaa83a19, type: 3}
@@ -6010,6 +6078,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &506739577
 Animator:
   serializedVersion: 5
@@ -6122,6 +6192,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &512855648
 Animator:
   serializedVersion: 5
@@ -6816,6 +6888,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &591894557
 Animator:
   serializedVersion: 5
@@ -8069,6 +8143,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &706854119
 Animator:
   serializedVersion: 5
@@ -8478,6 +8554,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &738555191
 Animator:
   serializedVersion: 5
@@ -8981,6 +9059,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &770542700
 Animator:
   serializedVersion: 5
@@ -9162,6 +9242,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &780985960
 Animator:
   serializedVersion: 5
@@ -9315,6 +9397,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &790539598
 Animator:
   serializedVersion: 5
@@ -9718,6 +9802,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &844603169
 Animator:
   serializedVersion: 5
@@ -10530,6 +10616,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 8300000, guid: dc901ddc2f2fa0f4d8cb63fa2194f4e3, type: 3}
+  doorCloseSound: {fileID: 8300000, guid: dabed40860240ac4aa40c70dac05d439, type: 3}
 --- !u!95 &895981160
 Animator:
   serializedVersion: 5
@@ -10854,6 +10942,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &924881370
 Animator:
   serializedVersion: 5
@@ -12127,6 +12217,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1024666411
 Animator:
   serializedVersion: 5
@@ -12361,6 +12453,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1076158486
 Animator:
   serializedVersion: 5
@@ -12399,6 +12493,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1076937163
 Animator:
   serializedVersion: 5
@@ -12539,6 +12635,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1100380198
 Animator:
   serializedVersion: 5
@@ -12962,6 +13060,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1151203625
 Animator:
   serializedVersion: 5
@@ -13176,6 +13276,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1199534523
 Animator:
   serializedVersion: 5
@@ -13288,6 +13390,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1199941437
 Animator:
   serializedVersion: 5
@@ -13630,6 +13734,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1216809218
 Animator:
   serializedVersion: 5
@@ -13834,6 +13940,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1229187290
 Animator:
   serializedVersion: 5
@@ -14554,6 +14662,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1293673131
 Animator:
   serializedVersion: 5
@@ -15006,7 +15116,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 252d26a5b4804dc429f149d5b3816578, type: 2}
+  - {fileID: 2100000, guid: 8226582fdc161e5499054b12656ae891, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15175,6 +15285,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1363364501
 Animator:
   serializedVersion: 5
@@ -15384,6 +15496,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1378944393
 Animator:
   serializedVersion: 5
@@ -16178,6 +16292,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1419610822
 Animator:
   serializedVersion: 5
@@ -16216,6 +16332,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1420266917
 Animator:
   serializedVersion: 5
@@ -16237,27 +16355,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &1421145388 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
-  m_PrefabInstance: {fileID: 103944573}
-  m_PrefabAsset: {fileID: 0}
---- !u!111 &1421145390
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1421145388}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 1827226128182048838, guid: 8408f8186201ef54ebf522269f4abe7e, type: 3}
-  m_Animations:
-  - {fileID: 1827226128182048838, guid: 8408f8186201ef54ebf522269f4abe7e, type: 3}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &1429162046 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 779b4077340a3bb42b1d78e6eaa83a19, type: 3}
@@ -16446,6 +16543,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1436448221
 Animator:
   serializedVersion: 5
@@ -16484,6 +16583,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1443232765
 Animator:
   serializedVersion: 5
@@ -16706,6 +16807,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1488686133
 Animator:
   serializedVersion: 5
@@ -16727,6 +16830,75 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1001 &1513838188
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.1831808
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0000009536743
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 19.605719
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
+      propertyPath: m_Name
+      value: MarulcModel
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 69a20f156d8d93a4690da106eba73df0, type: 3}
 --- !u!1001 &1517272165
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16813,6 +16985,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1517272168
 Animator:
   serializedVersion: 5
@@ -17418,6 +17592,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1581616515
 Animator:
   serializedVersion: 5
@@ -17599,6 +17775,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1614540261
 Animator:
   serializedVersion: 5
@@ -18037,6 +18215,7 @@ GameObject:
   - component: {fileID: 1655221614}
   - component: {fileID: 1655221613}
   - component: {fileID: 1655221612}
+  - component: {fileID: 1655221611}
   - component: {fileID: 1655221615}
   m_Layer: 0
   m_Name: Note
@@ -18045,6 +18224,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &1655221611
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655221609}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1655221612
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18122,6 +18314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbf9fb565fc4bd645a741a7181043dc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactAudioClip: {fileID: 8300000, guid: 8e48a37eac0edcd46872baa66f3b7bb8, type: 3}
 --- !u!1001 &1658004014
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18208,6 +18401,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1658004017
 Animator:
   serializedVersion: 5
@@ -18440,6 +18635,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1684570385
 Animator:
   serializedVersion: 5
@@ -19068,6 +19265,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1744913202
 Animator:
   serializedVersion: 5
@@ -19267,6 +19466,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1765357949
 Animator:
   serializedVersion: 5
@@ -19448,6 +19649,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1801854740
 Animator:
   serializedVersion: 5
@@ -19675,6 +19878,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1819159447
 Animator:
   serializedVersion: 5
@@ -19731,6 +19936,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1851894507
 Animator:
   serializedVersion: 5
@@ -20092,6 +20299,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1875032005
 Animator:
   serializedVersion: 5
@@ -20393,6 +20602,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1919547759
 Animator:
   serializedVersion: 5
@@ -20525,6 +20736,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1928465556
 Animator:
   serializedVersion: 5
@@ -20632,6 +20845,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1934502952
 Animator:
   serializedVersion: 5
@@ -21127,6 +21342,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1952642739
 Animator:
   serializedVersion: 5
@@ -21308,6 +21525,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1959763916
 Animator:
   serializedVersion: 5
@@ -21515,6 +21734,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &1991476688
 Animator:
   serializedVersion: 5
@@ -21585,6 +21806,74 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1, y: 5, z: 0.25}
   m_Center: {x: -1.5, y: 0, z: 0}
+--- !u!1 &2044865209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2044865212}
+  - component: {fileID: 2044865211}
+  - component: {fileID: 2044865210}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2044865210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044865209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &2044865211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044865209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &2044865212
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044865209}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2045447410
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21676,6 +21965,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &2045447414
 Animator:
   serializedVersion: 5
@@ -22379,6 +22670,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &2108614252
 Animator:
   serializedVersion: 5
@@ -22417,6 +22710,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &2108829854
 Animator:
   serializedVersion: 5
@@ -22455,6 +22750,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &2115235621
 Animator:
   serializedVersion: 5
@@ -22493,6 +22790,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &2137047391
 Animator:
   serializedVersion: 5
@@ -22600,6 +22899,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &2137802296
 Animator:
   serializedVersion: 5
@@ -22638,6 +22939,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &2142038009
 Animator:
   serializedVersion: 5
@@ -22676,6 +22979,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ae808f86ee5b049b834cecbe272efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorOpenSound: {fileID: 0}
+  doorCloseSound: {fileID: 0}
 --- !u!95 &2142754409
 Animator:
   serializedVersion: 5
