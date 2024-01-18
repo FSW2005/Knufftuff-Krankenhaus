@@ -7,8 +7,8 @@ public class SimonsPlayer : MonoBehaviour
 {
     private Rigidbody rb;
     [SerializeField]
-    private float speed,sprintSpeed,maxSprintDuration;
-    private float sprintDurationCounter,sprintSpeedMulti=1;
+    private float speed,sprintSpeed,maxSprintDuration, crouchHight;
+    private float sprintDurationCounter,sprintSpeedMulti=1,defaultHight;
     [SerializeField]
     private KeyCode[] inputs;
     private Vector3 endVelocity;
@@ -20,18 +20,27 @@ public class SimonsPlayer : MonoBehaviour
     Left
     Right
     Sprint
-
+    Crouch
     */
     // Start is called before the first frame update
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
         slider.maxValue = maxSprintDuration;
+        defaultHight = transform.localScale.y;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(inputs[5]))
+        {
+            transform.localScale = new Vector3(1, crouchHight, 1);
+        }
+        if (Input.GetKeyUp(inputs[5]))
+        {
+            transform.localScale = new Vector3(1, defaultHight, 1);
+        }
         Stamina(inputs[4]);
         Movement(inputs[0], transform.forward);
         Movement(inputs[1], -transform.forward);
