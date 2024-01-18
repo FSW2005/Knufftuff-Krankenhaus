@@ -352,6 +352,7 @@
 "Assets/Code/FelixMovement.cs"
 "Assets/Code/FirstPersonCamera.cs"
 "Assets/Code/Flashlight.cs"
+"Assets/Code/HomeMenue.cs"
 "Assets/Code/Interact.cs"
 "Assets/Code/Inventory.cs"
 "Assets/Code/NotesInteract.cs"
