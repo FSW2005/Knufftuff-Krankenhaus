@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.33f1 (ee5a2aa03ab2) revision 15620650'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19045) 64bit Education' Language: 'sv' Physical Memory: 16064 MB
+OS: 'Windows 10  (10.0.19045) 64bit Education' Language: 'en' Physical Memory: 16064 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2021.3.33f1\Editor\Unity.exe
 -name
 AssetImportWorker1
 -projectPath
-C:/Users/felix.wikstrom/Documents/GitHub/Knufftuff-Krankenhaus/kranken
+C:/Users/simon.lowenhielm/Desktop/Projekt 2024/Knufftuff-Krankenhaus/kranken
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-58833
-Successfully changed project path to: C:/Users/felix.wikstrom/Documents/GitHub/Knufftuff-Krankenhaus/kranken
-C:/Users/felix.wikstrom/Documents/GitHub/Knufftuff-Krankenhaus/kranken
+51059
+Successfully changed project path to: C:/Users/simon.lowenhielm/Desktop/Projekt 2024/Knufftuff-Krankenhaus/kranken
+C:/Users/simon.lowenhielm/Desktop/Projekt 2024/Knufftuff-Krankenhaus/kranken
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,197 +47,126 @@ C:/Users/felix.wikstrom/Documents/GitHub/Knufftuff-Krankenhaus/kranken
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [21744] Host "[IP] 10.81.53.90 [Port] 0 [Flags] 2 [Guid] 2540101476 [EditorId] 2540101476 [Version] 1048832 [Id] WindowsEditor(7,5CD132CY5H) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [10624] Host "[IP] 10.81.52.54 [Port] 0 [Flags] 2 [Guid] 2869304322 [EditorId] 2869304322 [Version] 1048832 [Id] WindowsEditor(7,5CD132CY4G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [21744] Host "[IP] 10.81.53.90 [Port] 0 [Flags] 2 [Guid] 2540101476 [EditorId] 2540101476 [Version] 1048832 [Id] WindowsEditor(7,5CD132CY5H) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [10624] Host "[IP] 10.81.52.54 [Port] 0 [Flags] 2 [Guid] 2869304322 [EditorId] 2869304322 [Version] 1048832 [Id] WindowsEditor(7,5CD132CY4G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
-Refreshing native plugins compatible for Editor in 180.23 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 112.50 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.33f1 (ee5a2aa03ab2)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/felix.wikstrom/Documents/GitHub/Knufftuff-Krankenhaus/kranken/Assets
+[Subsystems] Discovering subsystems at path C:/Users/simon.lowenhielm/Desktop/Projekt 2024/Knufftuff-Krankenhaus/kranken/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
     Renderer: NVIDIA GeForce MX450 (ID=0x1f97)
     Vendor:   NVIDIA
-    VRAM:     1928 MB
-    Driver:   31.0.15.1713
+    VRAM:     1920 MB
+    Driver:   31.0.15.2919
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56476
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56216
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.019129 seconds.
+Registered in 0.011210 seconds.
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 159.72 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 101.82 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.249 seconds
+- Completed reload, in  0.797 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1250ms)
-		BeginReloadAssembly (178ms)
+	ReloadAssembly (798ms)
+		BeginReloadAssembly (140ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (872ms)
-			LoadAssemblies (175ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (533ms)
+			LoadAssemblies (137ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (206ms)
+			SetupTypeCache (122ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (548ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (331ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (23ms)
+				InitializePlatformSupportModulesInManaged (12ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (160ms)
+				RefreshPlugins (102ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (288ms)
-				ProcessInitializeOnLoadMethodAttributes (76ms)
+				ProcessInitializeOnLoadAttributes (162ms)
+				ProcessInitializeOnLoadMethodAttributes (54ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006607 seconds.
+Registered in 0.007958 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 2.64 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 127.62 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Completed reload, in  2.345 seconds
+- Completed reload, in  1.857 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2346ms)
-		BeginReloadAssembly (330ms)
+	ReloadAssembly (1858ms)
+		BeginReloadAssembly (146ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (12ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (41ms)
-		EndReloadAssembly (1821ms)
-			LoadAssemblies (245ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (1593ms)
+			LoadAssemblies (119ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (454ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (74ms)
-			SetupLoadedEditorAssemblies (1078ms)
+			SetupTypeCache (379ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (1006ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (25ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (203ms)
-				ProcessInitializeOnLoadAttributes (793ms)
-				ProcessInitializeOnLoadMethodAttributes (40ms)
-				AfterProcessingInitializeOnLoad (12ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (128ms)
+				BeforeProcessingInitializeOnLoad (131ms)
+				ProcessInitializeOnLoadAttributes (639ms)
+				ProcessInitializeOnLoadMethodAttributes (87ms)
+				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Failed to load shader (instanceID 450, GUID 5f1864addb451f54bae8c86d230f736e)
-Failed to load shader (instanceID 514, GUID 8516d7a69675844a7a0b7095af7c46af)
-Failed to load shader (instanceID 542, GUID c8b6a681c7b4e2e4785ffab093907f9e)
-Failed to load shader (instanceID 410, GUID ec9fec698a3456d4fb18cf8bacb7a2bc)
-Failed to load shader (instanceID 442, GUID 5e7134d6e63e0bc47a1dd2669cedb379)
 Failed to load shader (instanceID 472, GUID 0f4122b9a743b744abe2fb6a0a88868b)
-Failed to load shader (instanceID 436, GUID d5a307c014552314b9f560906d708772)
-Failed to load shader (instanceID 548, GUID 0a7e590f3cf1d4ee8a8fab5b6eff09ef)
-Failed to load shader (instanceID 540, GUID 21322c8b137c66e49b86085d3c8161f6)
-Failed to load shader (instanceID 516, GUID 8fbe92a9edfe6074e841d6dd1509bc59)
-Failed to load shader (instanceID 402, GUID d6dae50ee9e1bfa4db75f19f99355220)
-Failed to load shader (instanceID 408, GUID 65df88701913c224d95fc554db28381a)
-Failed to load shader (instanceID 556, GUID 650dd9526735d5b46b79224bc6e94025)
-Failed to load shader (instanceID 444, GUID 2aed67ad60045d54ba3a00c91e2d2631)
-Failed to load shader (instanceID 454, GUID e8ee25143a34b8c4388709ea947055d1)
-Failed to load shader (instanceID 438, GUID 1121bb4e615ca3c48b214e79e841e823)
-Failed to load shader (instanceID 406, GUID 04c410c9937594faa893a11dceb85f7e)
-Failed to load shader (instanceID 492, GUID a16365e8c873daa4c94919438490b905)
-Failed to load shader (instanceID 434, GUID 4431b1f1f743fbf4eb310a967890cbea)
-Failed to load shader (instanceID 478, GUID e9155b26e1bc55942a41e518703fe304)
-Failed to load shader (instanceID 518, GUID 5caf62d8bd7c44596ace77ef9eb8ea31)
-Failed to load shader (instanceID 466, GUID f6783ab646d374f94b199774402a5144)
-Failed to load shader (instanceID 528, GUID 77cfa04f893eb8745b6a454a3d51b43c)
-Failed to load shader (instanceID 558, GUID 19dfbb09098c9584a83c956fbd6c5d79)
-Failed to load shader (instanceID 430, GUID 8d2bb70cbf9db8d4da26e15b26e74248)
-Failed to load shader (instanceID 494, GUID 0d0f817524897904ba47a6a1d55e7668)
-Failed to load shader (instanceID 480, GUID e6e9a19c3678ded42a3bc431ebef7dbd)
-Failed to load shader (instanceID 486, GUID d104b2fc1ca6445babb8e90b0758136b)
-Failed to load shader (instanceID 412, GUID e7857e9d0c934dc4f83f270f8447b006)
 Failed to load shader (instanceID 426, GUID 69c1f799e772cb6438f56c23efccb782)
-Failed to load shader (instanceID 550, GUID ee7e4c9a5f6364b688a332c67fc32cca)
-Failed to load shader (instanceID 554, GUID de02b375720b5c445afe83cd483bedf3)
-Failed to load shader (instanceID 484, GUID 93446b5c5339d4f00b85c159e1159b7c)
-Failed to load shader (instanceID 482, GUID 5fd9a8feb75a4b5894c241777f519d4e)
-Failed to load shader (instanceID 546, GUID da07703fcc09f8d4799221050659bd55)
-Failed to load shader (instanceID 422, GUID e8b802ac01d87144b91f12f40c1f2659)
-Failed to load shader (instanceID 560, GUID 2df96b66b5510f94b98df2ac6f926ef4)
-Failed to load shader (instanceID 520, GUID e35a31e1679aeff489e202f5cc4853d5)
-Failed to load shader (instanceID 510, GUID 36e335017ad71d54fbb10842863188ae)
-Failed to load shader (instanceID 470, GUID 29868e73b638e48ca99a19ea58c48d90)
-Failed to load shader (instanceID 452, GUID 6cda457ac28612740adb23da5d39ea92)
-Failed to load shader (instanceID 506, GUID 50b406436c6214c49aaaa6011b71dde8)
-Failed to load shader (instanceID 530, GUID ce09d4a80b88c5a4eb9768fab4f1ee00)
-Failed to load shader (instanceID 418, GUID e39bd598ce13f44ba8af997d3e42cd18)
-Failed to load shader (instanceID 522, GUID b7839dad95683814aa64166edc107ae2)
-Failed to load shader (instanceID 432, GUID 13c02b14c4d048fa9653293d54f6e0e1)
-Failed to load shader (instanceID 496, GUID 4386e57b23a56004c93e1d57d2bbcb4f)
-Failed to load shader (instanceID 534, GUID 44fc62292b65ab04eabcf310e799ccf6)
-Failed to load shader (instanceID 552, GUID c7d04ca57e5449d49ad9cee1c604bc26)
-Failed to load shader (instanceID 500, GUID 0ca6dca7396eb48e5849247ffd444914)
-Failed to load shader (instanceID 476, GUID cf852408f2e174538bcd9b7fda1c5ae7)
-Failed to load shader (instanceID 538, GUID d79e1c784eaf80c4585c0be7391f757a)
-Failed to load shader (instanceID 456, GUID 562b7ae4f629f144aa97780546fce7c6)
-Failed to load shader (instanceID 512, GUID f056d8bd2a1c7e44e9729144b4c70395)
-Failed to load shader (instanceID 428, GUID e260cfa7296ee7642b167f1eb5be5023)
-Failed to load shader (instanceID 424, GUID 0406db5a14f94604a8c57ccfbc9f3b46)
-Failed to load shader (instanceID 498, GUID 95e15a77195eb574ab82aaac18b1c796)
-Failed to load shader (instanceID 532, GUID 0849e84e3d62649e8882e9d6f056a017)
-Failed to load shader (instanceID 562, GUID 77774d9009bb81447b048c907d4c6273)
-Failed to load shader (instanceID 474, GUID 99134b1f0c27d54469a840832a28fadf)
-Failed to load shader (instanceID 536, GUID 5ec81c81908db34429b4f6ddecadd3bd)
-Failed to load shader (instanceID 446, GUID 1edcd131364091c46a17cbff0b1de97a)
-Failed to load shader (instanceID 440, GUID 63eaba0ebfb82cc43bde059b4a8c65f6)
-Failed to load shader (instanceID 420, GUID 60e10855641b4d84da68ec72e6f6eeb8)
-Failed to load shader (instanceID 400, GUID c17132b1f77d20942aa75f8429c0f8bc)
-Failed to load shader (instanceID 458, GUID c49e63ed1bbcb334780a3bd19dfed403)
-Failed to load shader (instanceID 502, GUID 7e60080c8cd24a2468cb08b4bfee5606)
-Failed to load shader (instanceID 488, GUID c56b7e0d4c7cb484e959caeeedae9bbf)
-Failed to load shader (instanceID 448, GUID a15b78cf8ca26ca4fb2090293153c62c)
-Failed to load shader (instanceID 416, GUID 933532a4fcc9baf4fa0491de14d08ed7)
-Failed to load shader (instanceID 468, GUID e507fdfead5ca47e8b9a768b51c291a1)
-Failed to load shader (instanceID 490, GUID 7b3ede40266cd49a395def176e1bc486)
-Failed to load shader (instanceID 404, GUID 0f854b35a0cf61a429bd5dcfea30eddd)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3082 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (48.5 KB). Loaded Objects now: 3543.
-Memory consumption went from 112.4 MB to 112.4 MB.
-Total: 2.973000 ms (FindLiveObjects: 0.250200 ms CreateObjectMapping: 0.115600 ms MarkObjects: 2.520300 ms  DeleteObjects: 0.085600 ms)
+Unloading 4880 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 73 unused Assets / (3.8 MB). Loaded Objects now: 5292.
+Memory consumption went from 194.7 MB to 190.9 MB.
+Total: 5.728300 ms (FindLiveObjects: 0.386000 ms CreateObjectMapping: 0.404600 ms MarkObjects: 3.439800 ms  DeleteObjects: 1.496600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
@@ -246,444 +175,9 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 161534.187430 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Thin.ttf
-  artifactKey: Guid(19a9abb883540be48b75b951a927ae03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 294068.581532 seconds.
+  path: Assets/Materials/map.mat
+  artifactKey: Guid(264de9bde2170e542b78f5b78a5e5cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Thin.ttf using Guid(19a9abb883540be48b75b951a927ae03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df4de4c87e30c2cd1a07ee60ab0eb36e') in 0.025470 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/EnemySight.obj
-  artifactKey: Guid(d3d5fd16c235daf4aa5a23812b84f2b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/EnemySight.obj using Guid(d3d5fd16c235daf4aa5a23812b84f2b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28ca2c07074976853da1c30a3ec7fc15') in 0.230616 seconds 
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/Temp materials/EnemySight.mat
-  artifactKey: Guid(f52d43e5509be1444947814a05ea587d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Temp materials/EnemySight.mat using Guid(f52d43e5509be1444947814a05ea587d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1149fe42430a3a1f302741d470c936d') in 0.035970 seconds 
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/ParticlesUnlit.mat
-  artifactKey: Guid(e823cd5b5d27c0f4b8256e7c12ee3e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/ParticlesUnlit.mat using Guid(e823cd5b5d27c0f4b8256e7c12ee3e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a86fbc9d8a8737a8045236185be7d76') in 0.048268 seconds 
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Italic.ttf
-  artifactKey: Guid(c839255fc8f6b4b4d90bf8c1af9f9bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Italic.ttf using Guid(c839255fc8f6b4b4d90bf8c1af9f9bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '297db372c2df0feab668bcc6c8e97e1c') in 0.010956 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000094 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-ThinItalic.ttf
-  artifactKey: Guid(b2ea3b3f1765e544b9eb5bd1a93a91ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-ThinItalic.ttf using Guid(b2ea3b3f1765e544b9eb5bd1a93a91ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65a6be1e7336aa63f2176fcd3afef17f') in 0.004284 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/3dObjects/Door.fbx
-  artifactKey: Guid(779b4077340a3bb42b1d78e6eaa83a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/3dObjects/Door.fbx using Guid(779b4077340a3bb42b1d78e6eaa83a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83b91b862dd65859fac46661f69ca1f8') in 0.137203 seconds 
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/SpatialMappingWireframe.mat
-  artifactKey: Guid(9875a245ac49007498213638a307faa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/SpatialMappingWireframe.mat using Guid(9875a245ac49007498213638a307faa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23a33bbeae2b0196037098f60f3959e7') in 0.016078 seconds 
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Regular.ttf
-  artifactKey: Guid(30dc370b164eefc43b95744fc796dad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Regular.ttf using Guid(30dc370b164eefc43b95744fc796dad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c975cc04c9455782b26213888ba2dca') in 0.004165 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/UniversalRenderPipelineGlobalSettings.asset
-  artifactKey: Guid(d49f0f1ff2cf69e4f90e28e5fd3ed553) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(d49f0f1ff2cf69e4f90e28e5fd3ed553) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d1456969674d113205618e84b522701') in 0.007217 seconds 
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Packages/com.unity.render-pipelines.core/Editor/Resources/DebugProbe.fbx
-  artifactKey: Guid(9e1c97fc44f9a8744b61b58f72c56de4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Packages/com.unity.render-pipelines.core/Editor/Resources/DebugProbe.fbx using Guid(9e1c97fc44f9a8744b61b58f72c56de4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08fe6091e0a4594b0f36a4cfdc4145dc') in 0.023372 seconds 
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/3dObjects/DoubleDoorOpening.fbx
-  artifactKey: Guid(41e6fa39e471aff41ab0b14dbc209a59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/3dObjects/DoubleDoorOpening.fbx using Guid(41e6fa39e471aff41ab0b14dbc209a59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5597a4f80f316d7e82cb9129f8707550') in 0.047315 seconds 
-Number of asset objects unloaded after import = 20
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/3dObjects/WindowWall.fbx
-  artifactKey: Guid(dffec4261194c4549bd6cd78507a04d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/3dObjects/WindowWall.fbx using Guid(dffec4261194c4549bd6cd78507a04d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '629dcbeef05055b8cc106c702ed5463b') in 0.043603 seconds 
-Number of asset objects unloaded after import = 15
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Medium.ttf
-  artifactKey: Guid(a51a3aebb43ac044989270407476b208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-Medium.ttf using Guid(a51a3aebb43ac044989270407476b208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78066b4040140b6e33d678332361e131') in 0.005043 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Fonts/PerfectDOSVGA437.ttf
-  artifactKey: Guid(74a5091d8707f334b9a5c31ef71a64ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Fonts/PerfectDOSVGA437.ttf using Guid(74a5091d8707f334b9a5c31ef71a64ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46aa72e04e37c343f24ca5d0f94479d2') in 0.003643 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BoldItalic.ttf
-  artifactKey: Guid(dfb97a9307a577a41bcacba34b9a7e32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-BoldItalic.ttf using Guid(dfb97a9307a577a41bcacba34b9a7e32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '071fc5a88c15ca83061f147a707cb8c2') in 0.004102 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-LightItalic.ttf
-  artifactKey: Guid(5e63515167650a541b309ba3bfd4db3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Packages/com.unity.searcher/Editor/Resources/FlatSkin/Font/Roboto-LightItalic.ttf using Guid(5e63515167650a541b309ba3bfd4db3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5afd76a087badea8f34b42299cf02958') in 0.004115 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 12.650598 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat
-  artifactKey: Guid(a97c105638bdf8b4a8650670310a4cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat using Guid(a97c105638bdf8b4a8650670310a4cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7186b99bb65dc6403b38032075f84a7') in 0.035227 seconds 
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Unlit-Default.mat
-  artifactKey: Guid(9dfc825aed78fcd4ba02077103263b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Unlit-Default.mat using Guid(9dfc825aed78fcd4ba02077103263b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc4f673aa5af20c80678b968805cbcf0') in 0.012392 seconds 
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008219 seconds.
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-Begin MonoManager ReloadAssembly
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Completed reload, in  2.291 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2291ms)
-		BeginReloadAssembly (322ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (88ms)
-		EndReloadAssembly (1777ms)
-			LoadAssemblies (178ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (525ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (52ms)
-			SetupLoadedEditorAssemblies (982ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (230ms)
-				ProcessInitializeOnLoadAttributes (692ms)
-				ProcessInitializeOnLoadMethodAttributes (34ms)
-				AfterProcessingInitializeOnLoad (14ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3074 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (22.0 KB). Loaded Objects now: 3591.
-Memory consumption went from 114.0 MB to 114.0 MB.
-Total: 3.397700 ms (FindLiveObjects: 0.268400 ms CreateObjectMapping: 0.084100 ms MarkObjects: 2.976300 ms  DeleteObjects: 0.067200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.010649 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.43 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Completed reload, in  2.284 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2286ms)
-		BeginReloadAssembly (282ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (17ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (65ms)
-		EndReloadAssembly (1843ms)
-			LoadAssemblies (183ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (481ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (82ms)
-			SetupLoadedEditorAssemblies (1058ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (112ms)
-				ProcessInitializeOnLoadAttributes (866ms)
-				ProcessInitializeOnLoadMethodAttributes (43ms)
-				AfterProcessingInitializeOnLoad (22ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
-Platform modules already initialized, skipping
-Failed to load shader (instanceID 450, GUID 5f1864addb451f54bae8c86d230f736e)
-Failed to load shader (instanceID 514, GUID 8516d7a69675844a7a0b7095af7c46af)
-Failed to load shader (instanceID 542, GUID c8b6a681c7b4e2e4785ffab093907f9e)
-Failed to load shader (instanceID 410, GUID ec9fec698a3456d4fb18cf8bacb7a2bc)
-Failed to load shader (instanceID 442, GUID 5e7134d6e63e0bc47a1dd2669cedb379)
-Failed to load shader (instanceID 472, GUID 0f4122b9a743b744abe2fb6a0a88868b)
-Failed to load shader (instanceID 436, GUID d5a307c014552314b9f560906d708772)
-Failed to load shader (instanceID 548, GUID 0a7e590f3cf1d4ee8a8fab5b6eff09ef)
-Failed to load shader (instanceID 540, GUID 21322c8b137c66e49b86085d3c8161f6)
-Failed to load shader (instanceID 516, GUID 8fbe92a9edfe6074e841d6dd1509bc59)
-Failed to load shader (instanceID 402, GUID d6dae50ee9e1bfa4db75f19f99355220)
-Failed to load shader (instanceID 408, GUID 65df88701913c224d95fc554db28381a)
-Failed to load shader (instanceID 556, GUID 650dd9526735d5b46b79224bc6e94025)
-Failed to load shader (instanceID 444, GUID 2aed67ad60045d54ba3a00c91e2d2631)
-Failed to load shader (instanceID 454, GUID e8ee25143a34b8c4388709ea947055d1)
-Failed to load shader (instanceID 438, GUID 1121bb4e615ca3c48b214e79e841e823)
-Failed to load shader (instanceID 406, GUID 04c410c9937594faa893a11dceb85f7e)
-Failed to load shader (instanceID 492, GUID a16365e8c873daa4c94919438490b905)
-Failed to load shader (instanceID 434, GUID 4431b1f1f743fbf4eb310a967890cbea)
-Failed to load shader (instanceID 478, GUID e9155b26e1bc55942a41e518703fe304)
-Failed to load shader (instanceID 518, GUID 5caf62d8bd7c44596ace77ef9eb8ea31)
-Failed to load shader (instanceID 466, GUID f6783ab646d374f94b199774402a5144)
-Failed to load shader (instanceID 528, GUID 77cfa04f893eb8745b6a454a3d51b43c)
-Failed to load shader (instanceID 558, GUID 19dfbb09098c9584a83c956fbd6c5d79)
-Failed to load shader (instanceID 430, GUID 8d2bb70cbf9db8d4da26e15b26e74248)
-Failed to load shader (instanceID 494, GUID 0d0f817524897904ba47a6a1d55e7668)
-Failed to load shader (instanceID 480, GUID e6e9a19c3678ded42a3bc431ebef7dbd)
-Failed to load shader (instanceID 486, GUID d104b2fc1ca6445babb8e90b0758136b)
-Failed to load shader (instanceID 412, GUID e7857e9d0c934dc4f83f270f8447b006)
-Failed to load shader (instanceID 426, GUID 69c1f799e772cb6438f56c23efccb782)
-Failed to load shader (instanceID 550, GUID ee7e4c9a5f6364b688a332c67fc32cca)
-Failed to load shader (instanceID 554, GUID de02b375720b5c445afe83cd483bedf3)
-Failed to load shader (instanceID 484, GUID 93446b5c5339d4f00b85c159e1159b7c)
-Failed to load shader (instanceID 482, GUID 5fd9a8feb75a4b5894c241777f519d4e)
-Failed to load shader (instanceID 546, GUID da07703fcc09f8d4799221050659bd55)
-Failed to load shader (instanceID 422, GUID e8b802ac01d87144b91f12f40c1f2659)
-Failed to load shader (instanceID 560, GUID 2df96b66b5510f94b98df2ac6f926ef4)
-Failed to load shader (instanceID 520, GUID e35a31e1679aeff489e202f5cc4853d5)
-Failed to load shader (instanceID 510, GUID 36e335017ad71d54fbb10842863188ae)
-Failed to load shader (instanceID 470, GUID 29868e73b638e48ca99a19ea58c48d90)
-Failed to load shader (instanceID 452, GUID 6cda457ac28612740adb23da5d39ea92)
-Failed to load shader (instanceID 506, GUID 50b406436c6214c49aaaa6011b71dde8)
-Failed to load shader (instanceID 530, GUID ce09d4a80b88c5a4eb9768fab4f1ee00)
-Failed to load shader (instanceID 418, GUID e39bd598ce13f44ba8af997d3e42cd18)
-Failed to load shader (instanceID 522, GUID b7839dad95683814aa64166edc107ae2)
-Failed to load shader (instanceID 432, GUID 13c02b14c4d048fa9653293d54f6e0e1)
-Failed to load shader (instanceID 496, GUID 4386e57b23a56004c93e1d57d2bbcb4f)
-Failed to load shader (instanceID 534, GUID 44fc62292b65ab04eabcf310e799ccf6)
-Failed to load shader (instanceID 552, GUID c7d04ca57e5449d49ad9cee1c604bc26)
-Failed to load shader (instanceID 500, GUID 0ca6dca7396eb48e5849247ffd444914)
-Failed to load shader (instanceID 476, GUID cf852408f2e174538bcd9b7fda1c5ae7)
-Failed to load shader (instanceID 538, GUID d79e1c784eaf80c4585c0be7391f757a)
-Failed to load shader (instanceID 456, GUID 562b7ae4f629f144aa97780546fce7c6)
-Failed to load shader (instanceID 512, GUID f056d8bd2a1c7e44e9729144b4c70395)
-Failed to load shader (instanceID 428, GUID e260cfa7296ee7642b167f1eb5be5023)
-Failed to load shader (instanceID 424, GUID 0406db5a14f94604a8c57ccfbc9f3b46)
-Failed to load shader (instanceID 498, GUID 95e15a77195eb574ab82aaac18b1c796)
-Failed to load shader (instanceID 532, GUID 0849e84e3d62649e8882e9d6f056a017)
-Failed to load shader (instanceID 562, GUID 77774d9009bb81447b048c907d4c6273)
-Failed to load shader (instanceID 474, GUID 99134b1f0c27d54469a840832a28fadf)
-Failed to load shader (instanceID 536, GUID 5ec81c81908db34429b4f6ddecadd3bd)
-Failed to load shader (instanceID 446, GUID 1edcd131364091c46a17cbff0b1de97a)
-Failed to load shader (instanceID 440, GUID 63eaba0ebfb82cc43bde059b4a8c65f6)
-Failed to load shader (instanceID 420, GUID 60e10855641b4d84da68ec72e6f6eeb8)
-Failed to load shader (instanceID 400, GUID c17132b1f77d20942aa75f8429c0f8bc)
-Failed to load shader (instanceID 458, GUID c49e63ed1bbcb334780a3bd19dfed403)
-Failed to load shader (instanceID 502, GUID 7e60080c8cd24a2468cb08b4bfee5606)
-Failed to load shader (instanceID 488, GUID c56b7e0d4c7cb484e959caeeedae9bbf)
-Failed to load shader (instanceID 448, GUID a15b78cf8ca26ca4fb2090293153c62c)
-Failed to load shader (instanceID 416, GUID 933532a4fcc9baf4fa0491de14d08ed7)
-Failed to load shader (instanceID 468, GUID e507fdfead5ca47e8b9a768b51c291a1)
-Failed to load shader (instanceID 490, GUID 7b3ede40266cd49a395def176e1bc486)
-Failed to load shader (instanceID 404, GUID 0f854b35a0cf61a429bd5dcfea30eddd)
-Refreshing native plugins compatible for Editor in 1.06 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3074 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (21.9 KB). Loaded Objects now: 3594.
-Memory consumption went from 116.6 MB to 116.6 MB.
-Total: 3.206400 ms (FindLiveObjects: 0.306800 ms CreateObjectMapping: 0.195900 ms MarkObjects: 2.674700 ms  DeleteObjects: 0.027900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 103.557610 seconds.
-  path: Assets/Rendering/URP_1_Renderer.asset
-  artifactKey: Guid(7d1580e926b8e614e90c4a7959260668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Rendering/URP_1_Renderer.asset using Guid(7d1580e926b8e614e90c4a7959260668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50a34dd3a27c0369b8d3b6cf46bafe01') in 0.019058 seconds 
-Number of asset objects unloaded after import = 1
+Start importing Assets/Materials/map.mat using Guid(264de9bde2170e542b78f5b78a5e5cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3249e19ca74c6a773338ac148b24d45') in 0.322440 seconds 
+Number of asset objects unloaded after import = 17
