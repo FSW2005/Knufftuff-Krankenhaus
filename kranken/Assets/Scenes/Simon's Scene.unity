@@ -1407,7 +1407,8 @@ MonoBehaviour:
   speed: 1500
   sprintSpeed: 2.5
   maxSprintDuration: 2
-  inputs: 7700000073000000610000006400000030010000
+  crouchHight: 1
+  inputs: 770000007300000061000000640000003001000032010000
   slider: {fileID: 1757177373}
 --- !u!54 &1635808532
 Rigidbody:
