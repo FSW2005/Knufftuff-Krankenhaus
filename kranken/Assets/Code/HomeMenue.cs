@@ -15,6 +15,8 @@ public class HomeMenue : MonoBehaviour
     private float counter;
     [SerializeField]
     string firstLevel;
+    [SerializeField]
+    GameObject textMeshObj;
     
     // Start is called before the first frame update
     void Start()
@@ -68,12 +70,12 @@ public class HomeMenue : MonoBehaviour
                 if (creditsWindow.GetComponent<Image>().enabled)
                 {
                     creditsWindow.GetComponent<Image>().enabled = false;
-                    creditsWindow.gameObject.GetComponentInChildren<TextMeshPro>().enabled = false;
+                    textMeshObj.GetComponent<TMP_Text>().enabled = false;
                 }
                 else
                 {
                     creditsWindow.GetComponent<Image>().enabled = true;
-                    creditsWindow.gameObject.GetComponentInChildren<TextMeshPro>().enabled = true;
+                    textMeshObj.GetComponent<TMP_Text>().enabled = true;
                 }
             }
             else if(counter == 2)
