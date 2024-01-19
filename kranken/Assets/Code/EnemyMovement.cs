@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -16,11 +15,6 @@ public class EnemyMovement : MonoBehaviour
     private float plusOrMinus = 1;
     [SerializeField]
     private float rotationSpeed;
-
-    private bool die=false;
-    [SerializeField]
-    private float timeTillDeath;
-    private float timeTillDeathCounter=0;
   
     //Following the player
     [SerializeField]
@@ -33,23 +27,10 @@ public class EnemyMovement : MonoBehaviour
     private float currentBestDistance = 1000000000000000;
     private bool foundNearestPoint= false;
 
-    //Animation
-    [SerializeField]
-    Animator animator;
-    [SerializeField]
-    RuntimeAnimatorController[] aniClips;
-    /*
-     idle
-    walk
-    sprint
-    attack
-     */
-
 
     // Start is called before the first frame update
     void Start()
     {
-        animator = gameObject.GetComponent<Animator>();
         rb = gameObject.GetComponent<Rigidbody>();
         
     }
@@ -58,61 +39,49 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (die)
+        isStunned = GameObject.FindGameObjectWithTag("FlashLight").GetComponent<Flashlight>().enemyStunned;
+        if (isStunned)
         {
-            timeTillDeathCounter += Time.deltaTime;
-            if (timeTillDeathCounter >= timeTillDeath)
-            {
-                SceneManager.LoadScene("Menue", LoadSceneMode.Single);
-            }
+            rb.velocity = new Vector3(0, 0, 0);
+            followPlayerTimer = 0;
         }
         else
         {
 
-            isStunned = GameObject.FindGameObjectWithTag("FlashLight").GetComponent<Flashlight>().enemyStunned;
-            if (isStunned)
+            if (gameObject.GetComponent<EnemySight>().sawPlayer)
             {
-                rb.velocity = new Vector3(0, 0, 0);
-                followPlayerTimer = 0;
-                animator.runtimeAnimatorController = aniClips[0];
+                foundNearestPoint = false;
+                followPlayerTimer = followPlayerFor;
+                playerPos = GetComponent<EnemySight>().hit.transform.gameObject.transform.position - transform.position;
+
+                //transform.LookAt(new Vector3(gameObject.GetComponent<EnemySight>().hit.transform.gameObject.transform.position.x, 0, gameObject.GetComponent<EnemySight>().hit.transform.gameObject.transform.position.z), transform.up);
+
             }
             else
             {
-
-                if (gameObject.GetComponent<EnemySight>().sawPlayer)
-                {
-                    foundNearestPoint = false;
-                    followPlayerTimer = followPlayerFor;
-                    playerPos = GetComponent<EnemySight>().hit.transform.gameObject.transform.position - transform.position;
-
-                    //transform.LookAt(new Vector3(gameObject.GetComponent<EnemySight>().hit.transform.gameObject.transform.position.x, 0, gameObject.GetComponent<EnemySight>().hit.transform.gameObject.transform.position.z), transform.up);
-
-                }
-                else
-                {
-                    followPlayerTimer -= Time.deltaTime;
-                }
-
-                if (followPlayerTimer > 0)
-                {
-                    transform.rotation = Quaternion.LookRotation(new Vector3(playerPos.x, 0, playerPos.z), Vector3.up);
-                    speedMultiCounter = speedMulti;
-                }
-                else
-                {
-                    speedMultiCounter = 1;
-
-                    if (!foundNearestPoint)
-                    {
-                        currentBestDistance = 1000000000000;
-                        FindNearestPoint();
-                    }
-                    NormalMovement();
-                }
-                rb.velocity = transform.forward * speed * speedMultiCounter;
-
+                followPlayerTimer -= Time.deltaTime;
             }
+
+            if (followPlayerTimer > 0)
+            {
+                transform.rotation = Quaternion.LookRotation(new Vector3(playerPos.x, 0, playerPos.z), Vector3.up);
+                speedMultiCounter = speedMulti;
+            }
+            else
+            {
+                speedMultiCounter = 1;
+
+                if (!foundNearestPoint)
+                {
+                    currentBestDistance = 1000000000000;
+                    FindNearestPoint();
+                }
+                NormalMovement();
+            }
+            rb.velocity = transform.forward * speed * speedMultiCounter;
+
         }
+
     }
     private void FindNearestPoint()
     {
@@ -130,16 +99,6 @@ public class EnemyMovement : MonoBehaviour
     }
     private void NormalMovement()
     {
-        if(followPlayerTimer > 0)
-        {
-            animator.runtimeAnimatorController = aniClips[2];
-        }
-        else
-        {
-        animator.runtimeAnimatorController = aniClips[1];
-        }
-
-
         if (Mathf.Round(transform.position.x) == Mathf.Round(movementPoints[currentPoint].position.x) && Mathf.Round(transform.position.z) == Mathf.Round(movementPoints[currentPoint].position.z))
         {
             if (isWalingInCircles)
@@ -181,14 +140,6 @@ public class EnemyMovement : MonoBehaviour
             {
                 Gizmos.DrawLine(movementPoints[i].position, movementPoints[i + 1].position);
             }
-        }
-    }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.tag == "Player")
-        {
-            animator.runtimeAnimatorController = aniClips[3];
-            die = true;
         }
     }
 }
