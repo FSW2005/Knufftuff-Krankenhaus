@@ -10,8 +10,7 @@ public class HomeMenue : MonoBehaviour
     GameObject[] buttons;
     [SerializeField]
     GameObject pointer,creditsWindow;
-    [SerializeField]
-    KeyCode up, down,select;
+    KeyCode up=KeyCode.W, down=KeyCode.S,select=KeyCode.E;
     private float counter;
     [SerializeField]
     string firstLevel;
