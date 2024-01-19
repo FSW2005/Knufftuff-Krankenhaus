@@ -37,7 +37,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField]
     Animator animator;
     [SerializeField]
-    RuntimeAnimatorController[] animationClips;
+    RuntimeAnimatorController[] aniClips;
     /*
      idle
     walk
@@ -49,6 +49,7 @@ public class EnemyMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        animator = gameObject.GetComponent<Animator>();
         rb = gameObject.GetComponent<Rigidbody>();
         
     }
@@ -73,7 +74,7 @@ public class EnemyMovement : MonoBehaviour
             {
                 rb.velocity = new Vector3(0, 0, 0);
                 followPlayerTimer = 0;
-                animator.runtimeAnimatorController = animationClips[0];
+                animator.runtimeAnimatorController = aniClips[0];
             }
             else
             {
@@ -131,11 +132,11 @@ public class EnemyMovement : MonoBehaviour
     {
         if(followPlayerTimer > 0)
         {
-            animator.runtimeAnimatorController = animationClips[2];
+            animator.runtimeAnimatorController = aniClips[2];
         }
         else
         {
-        animator.runtimeAnimatorController = animationClips[1];
+        animator.runtimeAnimatorController = aniClips[1];
         }
 
 
@@ -186,7 +187,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            animator.runtimeAnimatorController = animationClips[4];
+            animator.runtimeAnimatorController = aniClips[3];
             die = true;
         }
     }
