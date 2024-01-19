@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Interact : MonoBehaviour
 {
-    // Method will be called when the player interacts with the object
+    // This method will be called when the player interacts with the object
     public virtual void Interactable()
     {
         Debug.Log("Interacting with: " + gameObject.name);
@@ -30,3 +30,4 @@ public class Interact : MonoBehaviour
         }
     }
 }
+

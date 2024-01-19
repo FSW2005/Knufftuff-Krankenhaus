@@ -4,43 +4,43 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    // Strukturen för Items
+    // Structure for items
     [System.Serializable]
     public struct Item
     {
         public string itemName;
         public int itemID;
         public Sprite itemIcon;
-        // Adda nya properties för neccesära Items
+        // Add other necessary item properties
     }
 
     // List: Inventory Items
     private List<Item> inventory = new List<Item>();
 
-    // Test UI för inventory display 
+    // Test UI for inventory display 
     public GameObject inventoryUIPrefab;
     private GameObject inventoryUI;
 
     void Start()
     {
-        // Exempel: Adda initiala Items till inventory
-      // -----------------------  AddItem("Sword", 1, swordIcon);
-     //   ---------------------- AddItem("Potion", 2, potionIcon);
+        // Example: Add initial items to the inventory
+        // AddItem("Sword", 1, swordIcon);
+        // AddItem("Potion", 2, potionIcon);
 
-        // Exempel: Display inventory UI
+        // Example: Display inventory UI
         ShowInventoryUI();
     }
 
     void Update()
     {
-        // Exempel: öppna/stäng inventory genom key tryck "I" 
+        // Example: Open/close inventory with the "I" key 
         if (Input.GetKeyDown(KeyCode.I))
         {
             ToggleInventoryUI();
         }
     }
 
-    // Adda Item till inventory
+    // Add item to the inventory
     public void AddItem(string name, int id, Sprite icon)
     {
         Item newItem = new Item
@@ -52,28 +52,28 @@ public class Inventory : MonoBehaviour
 
         inventory.Add(newItem);
 
-        // Updatera UI för eventuell implementering
+        // Update UI if necessary
         UpdateInventoryUI();
     }
 
-    // Kasta bort items från inventory genom ID
+    // Remove items from the inventory by ID
     public void RemoveItem(int id)
     {
         inventory.RemoveAll(item => item.itemID == id);
 
-        // Updatera UI för eventuell implementering
+        // Update UI if necessary
         UpdateInventoryUI();
     }
 
-    // Updatera UI till nuvarande 
+    // Update UI to current state
     void UpdateInventoryUI()
     {
-        // Implementera UI updateringar baserad på nuvarande stadiet inventory beffiner sig i
-        // Möjligen: Updatera UI panel, adda/ta bort UI element, etc.
-        // Kan använda 'inventory' listan för att komma åt nuvarande Items i inventory.
+        // Implement UI updates based on the current state of the inventory
+        // For example: Update UI panel, add/remove UI elements, etc.
+        // You can use the 'inventory' list to access current items in the inventory.
     }
 
-    // Visa inventory UI
+    // Show inventory UI
     void ShowInventoryUI()
     {
         if (inventoryUIPrefab != null)
@@ -83,7 +83,7 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    // Stäng ner inventory UI
+    // Close inventory UI
     void CloseInventoryUI()
     {
         if (inventoryUI != null)
@@ -92,7 +92,7 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    // Toggla inventory UI visibility
+    // Toggle inventory UI visibility
     void ToggleInventoryUI()
     {
         if (inventoryUI == null)

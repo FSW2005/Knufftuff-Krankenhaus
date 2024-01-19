@@ -6,11 +6,20 @@ public class NotesInteract : Interact
 {
     // Additional properties specific to the Notes script can be added here
 
+    // Material to use when the note is highlighted
+    public Material highlightMaterial;
+
+    // Original material of the note object
+    private Material originalMaterial;
+
     // Audio clip to play when interacting with the note
     public AudioClip interactAudioClip;
 
     // Reference to the AudioSource component
     private AudioSource audioSource;
+
+    // Set the distance threshold for player proximity
+    public float proximityDistance = 2.0f;
 
     void Start()
     {
@@ -26,6 +35,9 @@ public class NotesInteract : Interact
 
         // Ensure the AudioSource does not play on awake
         audioSource.playOnAwake = false;
+
+        // Save the original material of the note object
+        originalMaterial = GetComponent<Renderer>().material;
     }
 
     // Override the Interactable method from the base class
@@ -62,9 +74,6 @@ public class NotesInteract : Interact
     // Method to check if the player is near the note
     private bool IsPlayerNearNote()
     {
-        // Set the distance threshold for player proximity
-        float proximityDistance = 2.0f;
-
         // Calculate the distance between the player and the note
         float distanceToPlayer = Vector3.Distance(transform.position, Camera.main.transform.position);
 
@@ -93,6 +102,36 @@ public class NotesInteract : Interact
         else
         {
             Debug.LogError("Inventory script not found!");
+        }
+    }
+
+    // Highlight the note object when the player is near
+    void Update()
+    {
+        // Check if the player is near the note
+        if (IsPlayerNearNote())
+        {
+            // Change the material to the highlightMaterial when the player is near the note
+            GetComponent<Renderer>().material = highlightMaterial;
+        }
+        else
+        {
+            // Reset the material to the originalMaterial when the player is not near the note
+            GetComponent<Renderer>().material = originalMaterial;
+        }
+        {
+            // Check if the player is near the note
+            if (IsPlayerNearNote())
+            {
+                // Change the material to the highlightMaterial when the player is near the note
+                Debug.Log("Highlighting");
+                GetComponent<Renderer>().material = highlightMaterial;
+            }
+            else
+            {
+                // Reset the material to the originalMaterial when the player is not near the note
+                GetComponent<Renderer>().material = originalMaterial;
+            }
         }
     }
 }

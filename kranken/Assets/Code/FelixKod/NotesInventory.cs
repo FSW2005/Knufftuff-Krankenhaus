@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NotesInventory : Inventory
+public class NotesInventory : Interact
 {
     // Reference to the Inventory script
     public Inventory inventory;
 
-    // Reference to the Notes script
-    public NotesInventory notes;
+    // Set the distance threshold for player proximity
+    public float proximityDistance = 2.0f;
 
     void Start()
     {
@@ -17,46 +17,65 @@ public class NotesInventory : Inventory
         {
             Debug.LogError("Inventory reference not set in NotesInventory script!");
         }
-
-        if (notes == null)
-        {
-            Debug.LogError("Notes reference not set in NotesInventory script!");
-        }
     }
 
     void Update()
     {
-        // Example: Check for player input to put a note into the inventory
-        if (Input.GetKeyDown(KeyCode.P))
+        // Check for player input to put a note into the inventory
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            AddNoteToInventory();
+            // Interact with the note
+            Interactable();
         }
     }
 
-    // Method to add a note to the inventory
-    void AddNoteToInventory()
+    // Override the Interactable method from the base class
+    public override void Interactable()
     {
-        // Example: Check if the player is near a note (customize this logic based on your game)
+        // Call the base Interactable method if it exists in the base class
+        base.Interactable();
+
+        // Check if the player is close enough to the note
         if (IsPlayerNearNote())
+        {
+            // Add the note to the inventory
+            AddNoteToInventory();
+
+            // Remove the note from the scene
+            Destroy(gameObject);
+        }
+    }
+
+    // Method to check if the player is near the note
+    private bool IsPlayerNearNote()
+    {
+        // Calculate the distance between the player and the note
+        float distanceToPlayer = Vector3.Distance(transform.position, Camera.main.transform.position);
+
+        // Check if the player is within the proximity distance
+        return distanceToPlayer <= proximityDistance;
+    }
+
+    // Method to add the note to the inventory
+    private void AddNoteToInventory()
+    {
+        // Check if the SpriteRenderer component is present
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteRenderer != null)
         {
             // Example: Get information about the note (name, id, icon)
             string noteName = "Example Note";
             int noteID = 3; // Replace with the actual ID for notes
-            Sprite noteIcon = notes.GetComponent<SpriteRenderer>().sprite; // Replace with the actual way to get the note's icon
+            Sprite noteIcon = spriteRenderer.sprite; // Use the SpriteRenderer component
 
-            // Add note to the inventory
+            // Add the note to the inventory
             inventory.AddItem(noteName, noteID, noteIcon);
 
-            // Optionally: Remove the note from the scene or handle any other logic
-            Destroy(notes.gameObject);
+            // Optionally: You can also implement additional UI feedback or logic here
         }
-    }
-
-    // Example method to check if the player is near a note (customize based on your game)
-    bool IsPlayerNearNote()
-    {
-        // Replace with own logic to determine if the player is near a note
-        // raycasting, trigger zones, or any other method possible.
-        return true; // Placeholder, replace with actual logic
+        else
+        {
+            Debug.LogError("SpriteRenderer component not found on the Note game object!");
+        }
     }
 }
