@@ -15,6 +15,9 @@ public class Door : Interact
     // Variable to track if the door is currently in the process of opening or closing
     private bool isAnimating = false;
 
+    private Quaternion originalRotation; // Store the original rotation of the door
+    private BoxCollider doorCollider; // Reference to the BoxCollider component
+
     void Start()
     {
         // Find the Animator component on the door
@@ -27,6 +30,16 @@ public class Door : Interact
         // Add an AudioSource component to the door GameObject
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.spatialBlend = 1.0f; // Use 3D spatial audio
+
+        // Store the original rotation of the door
+        originalRotation = transform.rotation;
+
+        // Get the BoxCollider component on the door
+        doorCollider = GetComponent<BoxCollider>();
+        if (doorCollider == null)
+        {
+            Debug.LogError("BoxCollider component not found on the door. Add a BoxCollider component.");
+        }
     }
 
     // Override the Interact method to open/close the door
@@ -55,6 +68,21 @@ public class Door : Interact
         {
             PlayDoorSound(doorCloseSound);
         }
+
+        // Rotate the door by 90 degrees on the Y-axis after the first interaction
+        if (isOpen && !isAnimating)
+        {
+            StartCoroutine(RotateDoor(90f));
+            // Disable the BoxCollider when the door is open
+            doorCollider.enabled = false;
+        }
+        else if (!isOpen && !isAnimating)
+        {
+            // Reset the door to its original rotation on the second interaction
+            StartCoroutine(RotateDoor(0f));
+            // Enable the BoxCollider when the door is closed
+            doorCollider.enabled = true;
+        }
     }
 
     // Play the door sound with a delay to match the animation duration
@@ -74,5 +102,22 @@ public class Door : Interact
         yield return new WaitForSeconds(doorAnimator.GetCurrentAnimatorStateInfo(0).length);
         isAnimating = false;
     }
-}
 
+    // Coroutine to rotate the door smoothly
+    IEnumerator RotateDoor(float targetAngle)
+    {
+        float duration = 1.0f; // Adjust the rotation duration as needed
+        Quaternion startRotation = transform.rotation;
+        Quaternion targetRotation = originalRotation * Quaternion.Euler(0, targetAngle, 90);
+        float elapsedTime = 0f;
+
+        while (elapsedTime < duration)
+        {
+            transform.rotation = Quaternion.Slerp(startRotation, targetRotation, elapsedTime / duration);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        transform.rotation = targetRotation;
+    }
+}
