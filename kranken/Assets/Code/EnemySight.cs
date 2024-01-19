@@ -22,10 +22,10 @@ public class EnemySight : MonoBehaviour
         for (int i = 0; i < 200; i++)
         {
             randomCircle = new Vector3(Random.insideUnitCircle.x, Random.insideUnitCircle.y, Random.insideUnitCircle.y);
-            Debug.DrawRay(transform.forward*startPoint+transform.position+randomCircle*baseWidth, (transform.forward * beamLegnth) + randomCircle*endWidth, Color.green, 0,true);
-            if (Physics.Raycast(transform.forward * startPoint + transform.position + randomCircle * baseWidth, (transform.forward * beamLegnth) + randomCircle * endWidth, out hit, beamLegnth))
+            Debug.DrawRay(transform.forward*startPoint+transform.position + new Vector3(0, 3, 0) + randomCircle*baseWidth, (transform.forward * beamLegnth) + randomCircle*endWidth, Color.green, 0,true);
+            if (Physics.Raycast(transform.forward * startPoint  + transform.position + new Vector3(0, 3, 0) + randomCircle * baseWidth, (transform.forward * beamLegnth) + randomCircle * endWidth, out hit, beamLegnth))
             {
-                if(hit.transform.gameObject.tag == "Player")
+                if(hit.transform.gameObject.tag == "Player" && hit.transform.gameObject.transform.localScale.y >= 1.5)
                 {
                     sawPlayer = true;
                     i = 201;
