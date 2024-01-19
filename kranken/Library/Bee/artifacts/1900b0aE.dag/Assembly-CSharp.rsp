@@ -372,6 +372,7 @@
 "Assets/Code/FelixKod/OutputAudioRecorder.cs"
 "Assets/Code/FirstPersonCamera.cs"
 "Assets/Code/Flashlight.cs"
+"Assets/Code/HomeMenue.cs"
 "Assets/Code/SimonsPlayer.cs"
 "Assets/Code/tileMat.cs"
 "Assets/Code/timeMatGlassWall.cs"
