@@ -59,7 +59,7 @@ public class SimonsPlayer : MonoBehaviour
     }
     private void Stamina(KeyCode key)
     {
-        if (Input.GetKey(key) && sprintDurationCounter>0)
+        if (Input.GetKey(key) &&!(Input.GetKeyDown(inputs[5])) && sprintDurationCounter>0)
         {
             sprintSpeedMulti = sprintSpeed;
             sprintDurationCounter -= Time.deltaTime;

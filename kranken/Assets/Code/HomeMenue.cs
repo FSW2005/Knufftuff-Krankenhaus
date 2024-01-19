@@ -10,13 +10,13 @@ public class HomeMenue : MonoBehaviour
     GameObject[] buttons;
     [SerializeField]
     GameObject pointer,creditsWindow;
-    [SerializeField]
-    KeyCode up, down,select;
+    KeyCode up=KeyCode.W, down=KeyCode.S,select=KeyCode.E;
     private float counter;
     [SerializeField]
     string firstLevel;
     [SerializeField]
-    GameObject textMeshObj;
+    GameObject textMeshObj,fadeToBlack;
+    private bool startFadingToBlack;
     
     // Start is called before the first frame update
     void Start()
@@ -63,7 +63,8 @@ public class HomeMenue : MonoBehaviour
         {
             if(counter == 0)
             {
-                SceneManager.LoadScene(firstLevel, LoadSceneMode.Single);
+                startFadingToBlack = true;
+               // SceneManager.LoadScene(firstLevel, LoadSceneMode.Single);
             }
             else if (counter == 1)
             {
@@ -80,7 +81,7 @@ public class HomeMenue : MonoBehaviour
             }
             else if(counter == 2)
             {
-                //Application.Quit();
+                Application.Quit();
                 UnityEditor.EditorApplication.isPlaying = false;
             }
         }
