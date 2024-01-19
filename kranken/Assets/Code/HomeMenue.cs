@@ -63,8 +63,7 @@ public class HomeMenue : MonoBehaviour
         {
             if(counter == 0)
             {
-                startFadingToBlack = true;
-               // SceneManager.LoadScene(firstLevel, LoadSceneMode.Single);
+               SceneManager.LoadScene(firstLevel, LoadSceneMode.Single);
             }
             else if (counter == 1)
             {
