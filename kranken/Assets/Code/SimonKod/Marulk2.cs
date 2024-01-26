@@ -26,6 +26,7 @@ public class Marulk2 : MonoBehaviour
     {
         agent = gameObject.GetComponent<NavMeshAgent>();
         defaultSpeed = gameObject.GetComponent<NavMeshAgent>().speed;
+        
     }
 
     // Update is called once per frame
@@ -35,6 +36,7 @@ public class Marulk2 : MonoBehaviour
         {
             agent.ResetPath();
             followPlayerTimer = 0;
+            sawPlayer = false;
         }
         else
         {
