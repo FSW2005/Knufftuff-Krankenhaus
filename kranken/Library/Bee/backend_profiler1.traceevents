@@ -1,4 +1,5 @@
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+<<<<<<< Updated upstream
 ,{ "pid":12345, "tid":0, "ts":1706258555100649, "dur":1332, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1706258555101989, "dur":244, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
 ,{ "pid":12345, "tid":0, "ts":1706258555102353, "dur":58, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
@@ -1366,4 +1367,513 @@
 ,{ "pid":12345, "tid":8, "ts":1706258555167557, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":8, "ts":1706258555167606, "dur":1368633, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
 ,{ "pid":12345, "tid":0, "ts":1706258556540802, "dur":3847, "ph":"X", "name": "ProfilerWriteOutput" }
+=======
+,{ "pid":12345, "tid":0, "ts":1705675605268267, "dur":3834, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1705675605272118, "dur":119, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1705675605272294, "dur":33, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1705675605272330, "dur":1000, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1705675605273394, "dur":1482, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1705675605274876, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1705675607733808, "dur":362, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1705675607734170, "dur":28, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1705675607734199, "dur":6, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1705675607734205, "dur":13, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1705675607734218, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1705675607734221, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1705675607734230, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1705675607734233, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1705675607734243, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1705675607734246, "dur":11, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1705675607734257, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1705675607734260, "dur":11, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1705675607734271, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1705675607734274, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1705675607734282, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1705675607734285, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1705675607734295, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1705675607734317, "dur":4, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1705675607734393, "dur":3712, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1705675605274393, "dur":550, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1705675605274944, "dur":11043, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1705675605285992, "dur":642, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1705675605286874, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1705675605369617, "dur":3142, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1705675605372954, "dur":437, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705675605373399, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1705675605373523, "dur":2719, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705675605376338, "dur":82408, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705675605459048, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1705675605459083, "dur":2438, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705675605461641, "dur":148767, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705675605610476, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1705675605610497, "dur":1981, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705675605612564, "dur":70774, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705675605683349, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1705675605683370, "dur":2313, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705675605685783, "dur":76701, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705675605762494, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1705675605762511, "dur":6939, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705675605769580, "dur":150041, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705675605919631, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1705675605919644, "dur":3880, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705675605923622, "dur":500, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705675605924129, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1705675605924145, "dur":4711, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705675605929002, "dur":116955, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705675606045969, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1705675606045988, "dur":4474, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705675606050952, "dur":3572, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705675606054539, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1705675606054561, "dur":7866, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705675606062511, "dur":107344, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705675606169876, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1705675606169894, "dur":3186, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705675606173209, "dur":294, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705675606173511, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1705675606173534, "dur":15453, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705675606189127, "dur":929825, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705675607118957, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1705675607119000, "dur":6756, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":1, "ts":1705675607125873, "dur":607902, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1705675605274797, "dur":284, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1705675605275082, "dur":10945, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1705675605286028, "dur":625, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1705675605286663, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1705675605359510, "dur":1928, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1705675605361531, "dur":238, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":2, "ts":1705675605361777, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1705675605361878, "dur":28101, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":2, "ts":1705675605390116, "dur":448, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705675605390573, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1705675605390595, "dur":2644, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705675605393362, "dur":152432, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705675605545806, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1705675605545824, "dur":3766, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705675605549689, "dur":380320, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705675605930016, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1705675605930037, "dur":1946, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705675605932073, "dur":259, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705675605932339, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1705675605932352, "dur":1726, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705675605934161, "dur":102697, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705675606036869, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1705675606036889, "dur":1876, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705675606038860, "dur":272, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705675606039139, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1705675606039153, "dur":1676, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705675606040909, "dur":79119, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705675606120037, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1705675606120055, "dur":4100, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705675606124354, "dur":529, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705675606124890, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1705675606124905, "dur":6465, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705675606131455, "dur":710408, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705675606841872, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1705675606841889, "dur":2077, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705675606844046, "dur":1792, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705675606845843, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1705675606845854, "dur":2606, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705675606848548, "dur":340, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705675606848892, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1705675606848906, "dur":1343, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705675606850318, "dur":317, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705675606850641, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1705675606850653, "dur":1393, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705675606852110, "dur":8212, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705675606860336, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1705675606860353, "dur":5495, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705675606865930, "dur":865570, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705675607731509, "dur":10, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1705675607731532, "dur":2119, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1705675607733726, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":2, "ts":1705675607733731, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1705675605275009, "dur":5, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1705675605275014, "dur":10997, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1705675605286016, "dur":630, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":3, "ts":1705675605286656, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1705675605289509, "dur":5758, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":3, "ts":1705675605295413, "dur":28887, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1705675605324318, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1705675605324353, "dur":2542, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1705675605327115, "dur":29002, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1705675605356129, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1705675605356154, "dur":2534, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1705675605358845, "dur":213129, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":3, "ts":1705675605571986, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1705675605572007, "dur":6643, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":3, "ts":1705675605578738, "dur":111753, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705675605690510, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1705675605690555, "dur":4491, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705675605695163, "dur":281490, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705675605976664, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1705675605976683, "dur":2420, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705675605979203, "dur":573, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705675605979783, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1705675605979798, "dur":2615, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705675605982519, "dur":74883, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705675606057417, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1705675606057436, "dur":2171, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705675606059739, "dur":80423, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705675606140173, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1705675606140191, "dur":2468, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705675606142764, "dur":113411, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705675606256183, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1705675606256197, "dur":1355, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705675606257607, "dur":164, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705675606257775, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1705675606257783, "dur":987, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705675606258821, "dur":754467, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705675607013300, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1705675607013319, "dur":2102, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705675607015513, "dur":280, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705675607015799, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1705675607015811, "dur":1560, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705675607017452, "dur":80084, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705675607097547, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1705675607098045, "dur":2451, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":3, "ts":1705675607100608, "dur":18429, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":3, "ts":1705675607119047, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1705675607119064, "dur":2401, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":3, "ts":1705675607121570, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":3, "ts":1705675607121685, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1705675607121699, "dur":2226, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":3, "ts":1705675607124037, "dur":609768, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705675605275406, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705675605275407, "dur":10585, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705675605285993, "dur":28941, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1705675605314946, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705675605314991, "dur":3262, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1705675605318383, "dur":261, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1705675605318652, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705675605318672, "dur":2986, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1705675605321865, "dur":29264, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1705675605351140, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705675605351163, "dur":2564, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1705675605353841, "dur":399589, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":4, "ts":1705675605753439, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705675605753454, "dur":69680, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":4, "ts":1705675605823220, "dur":83573, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1705675605906804, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705675605906821, "dur":5091, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1705675605912010, "dur":69109, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1705675605981172, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705675605981999, "dur":5547, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1705675605987646, "dur":224964, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1705675606212621, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705675606212641, "dur":2557, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1705675606215325, "dur":606090, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":4, "ts":1705675606821424, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705675606821442, "dur":2540, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":4, "ts":1705675606824084, "dur":191276, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":4, "ts":1705675607015374, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705675607015392, "dur":2064, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":4, "ts":1705675607017540, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":4, "ts":1705675607017622, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705675607017634, "dur":1822, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":4, "ts":1705675607019566, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":4, "ts":1705675607019644, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705675607019656, "dur":1547, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":4, "ts":1705675607021272, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1705675607021341, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705675607021350, "dur":28461, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1705675607049905, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":4, "ts":1705675607049989, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705675607050003, "dur":2751, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":4, "ts":1705675607052855, "dur":90, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1705675607052951, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705675607052964, "dur":42873, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1705675607095927, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":4, "ts":1705675607096012, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705675607096025, "dur":2106, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":4, "ts":1705675607098271, "dur":257, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":4, "ts":1705675607098535, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705675607098548, "dur":2091, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":4, "ts":1705675607100772, "dur":109, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1705675607100932, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705675607100946, "dur":3016, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1705675607104059, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/resources.assets" }}
+,{ "pid":12345, "tid":4, "ts":1705675607104164, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705675607104177, "dur":1942, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/resources.assets" }}
+,{ "pid":12345, "tid":4, "ts":1705675607106207, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/level1.resS" }}
+,{ "pid":12345, "tid":4, "ts":1705675607106295, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705675607106307, "dur":1775, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/level1.resS" }}
+,{ "pid":12345, "tid":4, "ts":1705675607108166, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/level1" }}
+,{ "pid":12345, "tid":4, "ts":1705675607108255, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705675607108273, "dur":1902, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/level1" }}
+,{ "pid":12345, "tid":4, "ts":1705675607110249, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/level0.resS" }}
+,{ "pid":12345, "tid":4, "ts":1705675607110329, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705675607110340, "dur":1589, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/level0.resS" }}
+,{ "pid":12345, "tid":4, "ts":1705675607112052, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/level0" }}
+,{ "pid":12345, "tid":4, "ts":1705675607112134, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705675607112144, "dur":1389, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/level0" }}
+,{ "pid":12345, "tid":4, "ts":1705675607113603, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1705675607113692, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705675607113703, "dur":4226, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1705675607118016, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":4, "ts":1705675607118092, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705675607118103, "dur":3848, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":4, "ts":1705675607122035, "dur":230, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/boot.config" }}
+,{ "pid":12345, "tid":4, "ts":1705675607122270, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1705675607122280, "dur":1719, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/boot.config" }}
+,{ "pid":12345, "tid":4, "ts":1705675607124071, "dur":609719, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1705675605274350, "dur":544, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1705675605274908, "dur":11000, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1705675605285925, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":5, "ts":1705675605285943, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1705675605289743, "dur":1021, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":5, "ts":1705675605290772, "dur":187, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/app.info" }}
+,{ "pid":12345, "tid":5, "ts":1705675605290969, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1705675605291097, "dur":4474, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/app.info" }}
+,{ "pid":12345, "tid":5, "ts":1705675605295575, "dur":565, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1705675605296149, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1705675605296407, "dur":3063, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1705675605299583, "dur":27395, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1705675605326987, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1705675605327106, "dur":3484, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1705675605330709, "dur":238, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":5, "ts":1705675605330955, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1705675605330974, "dur":2613, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":5, "ts":1705675605333742, "dur":146888, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675605480640, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1705675605480833, "dur":3309, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675605484241, "dur":113349, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675605597600, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1705675605597620, "dur":3380, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675605601107, "dur":129425, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675605730608, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1705675605730628, "dur":7811, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675605738611, "dur":332, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675605738951, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1705675605738968, "dur":2313, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675605741438, "dur":383, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675605741828, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1705675605741843, "dur":1970, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675605743906, "dur":506, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675605744418, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1705675605744432, "dur":1830, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675605746337, "dur":297, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675605746639, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1705675605746651, "dur":1669, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675605748388, "dur":73990, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675605822392, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1705675605822412, "dur":16900, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675605839386, "dur":241, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675605839632, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1705675605839647, "dur":1799, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675605841524, "dur":117039, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675605958575, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1705675605958596, "dur":19888, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675605978616, "dur":567, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675605979197, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1705675605979214, "dur":2642, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675605981976, "dur":85879, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675606067867, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1705675606067888, "dur":7912, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675606075890, "dur":369, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675606076266, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1705675606076282, "dur":2326, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675606078707, "dur":137110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675606215827, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1705675606215889, "dur":11050, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675606227037, "dur":538487, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675606765637, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1705675606765670, "dur":3041, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675606768822, "dur":686200, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675607455033, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1705675607455052, "dur":3659, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":5, "ts":1705675607458794, "dur":274985, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1705675605274469, "dur":495, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1705675605274965, "dur":11054, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1705675605286023, "dur":31506, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1705675605317540, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1705675605317584, "dur":2261, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1705675605319961, "dur":253, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1705675605320222, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1705675605321600, "dur":3399, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1705675605325126, "dur":287, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1705675605325422, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1705675605325450, "dur":2181, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1705675605327772, "dur":242, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1705675605328022, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1705675605328041, "dur":2678, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1705675605330852, "dur":233, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":6, "ts":1705675605331093, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1705675605331112, "dur":3170, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":6, "ts":1705675605334403, "dur":338570, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705675605672988, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1705675605673015, "dur":9255, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705675605682368, "dur":237029, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705675605919409, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1705675605919429, "dur":3524, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705675605923148, "dur":616, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705675605923773, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1705675605923793, "dur":2414, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705675605926353, "dur":730, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705675605927092, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1705675605927111, "dur":2483, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705675605929687, "dur":82679, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705675606012381, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1705675606012402, "dur":2480, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705675606014979, "dur":89287, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705675606104280, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1705675606104302, "dur":1993, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705675606106378, "dur":88843, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705675606195238, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1705675606195269, "dur":1987, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705675606197357, "dur":357772, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705675606555139, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1705675606555157, "dur":1848, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705675606557076, "dur":128898, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705675606685992, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1705675606686016, "dur":2050, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705675606688135, "dur":103019, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705675606791165, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1705675606791182, "dur":2412, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705675606793671, "dur":4419, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705675606798099, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1705675606798114, "dur":4034, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705675606802222, "dur":674504, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705675607476741, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1705675607476766, "dur":7784, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":6, "ts":1705675607484673, "dur":249092, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705675605274684, "dur":381, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705675605275065, "dur":10959, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705675605286025, "dur":619, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":7, "ts":1705675605286655, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705675605358555, "dur":2285, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":7, "ts":1705675605360971, "dur":120631, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken.exe" }}
+,{ "pid":12345, "tid":7, "ts":1705675605481612, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705675605481631, "dur":20370, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken.exe" }}
+,{ "pid":12345, "tid":7, "ts":1705675605502089, "dur":113842, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675605615938, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705675605615953, "dur":1670, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675605617710, "dur":75221, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675605692942, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705675605692959, "dur":3066, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675605696145, "dur":70757, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675605766954, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705675605766973, "dur":2623, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675605769692, "dur":280, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675605769979, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705675605769993, "dur":3613, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675605773704, "dur":117307, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675605891025, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705675605891053, "dur":7645, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675605898803, "dur":81162, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675605979975, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705675605979993, "dur":3838, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675605983933, "dur":297, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675605984237, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705675605984251, "dur":2444, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675605986795, "dur":63271, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606050077, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705675606050095, "dur":7014, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606057235, "dur":80919, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606138166, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705675606138290, "dur":2886, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606141297, "dur":408, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606141712, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705675606141728, "dur":2205, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606144036, "dur":320, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606144407, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705675606144423, "dur":1898, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606146463, "dur":941, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606147411, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705675606147427, "dur":2616, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606150160, "dur":1319, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606151489, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705675606151507, "dur":2788, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606154391, "dur":419, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606154818, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705675606154836, "dur":4068, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606159014, "dur":417, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606159436, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705675606159449, "dur":1446, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606160988, "dur":219, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.RenderPipelines.Universal.Shaders.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606161213, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705675606161227, "dur":4598, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.RenderPipelines.Universal.Shaders.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606165932, "dur":1219, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606167157, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705675606167171, "dur":2382, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606169664, "dur":873, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606170545, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705675606170560, "dur":3468, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606174158, "dur":2264, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606176430, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705675606176444, "dur":9611, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606186165, "dur":710, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606186882, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705675606186898, "dur":3795, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606190973, "dur":320648, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606511631, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705675606511648, "dur":2128, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606513890, "dur":331217, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606845114, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705675606845127, "dur":3775, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675606848995, "dur":581494, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675607430501, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1705675607430520, "dur":4197, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":7, "ts":1705675607434816, "dur":298956, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1705675605274987, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1705675605274988, "dur":10929, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1705675605285925, "dur":103140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":8, "ts":1705675605389075, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1705675605389403, "dur":2194, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":8, "ts":1705675605391728, "dur":147675, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675605539415, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1705675605539434, "dur":4055, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675605543590, "dur":69966, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675605613564, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1705675605613580, "dur":1882, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675605615543, "dur":88350, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675605703905, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1705675605703926, "dur":13661, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675605717810, "dur":505, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675605718322, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1705675605718341, "dur":2948, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675605721386, "dur":385, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675605721778, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1705675605721795, "dur":6682, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675605728575, "dur":2540, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675605731123, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1705675605731137, "dur":3291, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675605734547, "dur":631, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675605735185, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1705675605735201, "dur":2918, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675605738256, "dur":86636, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675605824897, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1705675605824909, "dur":3054, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675605828042, "dur":220, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675605828267, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1705675605828278, "dur":1577, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675605829921, "dur":77204, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675605907133, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1705675605907147, "dur":18578, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675605925843, "dur":105057, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675606030913, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1705675606030961, "dur":7115, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675606038177, "dur":116836, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675606155028, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1705675606155044, "dur":4890, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675606160151, "dur":1064, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675606161271, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1705675606161290, "dur":4569, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675606165962, "dur":289, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675606166258, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1705675606166276, "dur":3003, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675606169412, "dur":292, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675606169711, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1705675606169728, "dur":5106, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675606174956, "dur":327, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675606175290, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1705675606175307, "dur":10903, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675606186334, "dur":421369, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675606607711, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1705675606607728, "dur":55111, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675606662920, "dur":513573, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675607176504, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1705675607176527, "dur":1988, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/felix.wikstrom/Desktop/Build/kranken_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":8, "ts":1705675607178586, "dur":555183, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1705675607741939, "dur":4665, "ph":"X", "name": "ProfilerWriteOutput" }
+>>>>>>> Stashed changes
 ,

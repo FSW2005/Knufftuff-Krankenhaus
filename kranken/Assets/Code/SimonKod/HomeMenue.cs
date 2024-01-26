@@ -16,7 +16,10 @@ public class HomeMenue : MonoBehaviour
     string firstLevel;
     [SerializeField]
     GameObject textMeshObj,fadeToBlack;
+<<<<<<< Updated upstream:kranken/Assets/Code/SimonKod/HomeMenue.cs
     
+=======
+>>>>>>> Stashed changes:kranken/Assets/Code/HomeMenue.cs
     
     // Start is called before the first frame update
     void Start()
@@ -44,7 +47,6 @@ public class HomeMenue : MonoBehaviour
         }
         PointerMover(pointer.GetComponent<RectTransform>().position, buttons[(int)counter].GetComponent<RectTransform>().position);
         Select();
-        //MouseMovePointer();
     }
     private void CounterChange(KeyCode key,float amount)
     {
@@ -63,8 +65,13 @@ public class HomeMenue : MonoBehaviour
         {
             if(counter == 0)
             {
+<<<<<<< Updated upstream:kranken/Assets/Code/SimonKod/HomeMenue.cs
                SceneManager.LoadScene(firstLevel);
                SceneManager.UnloadScene("Menue");
+=======
+               SceneManager.LoadScene(firstLevel, LoadSceneMode.Single);
+                SceneManager.UnloadScene("Menue");
+>>>>>>> Stashed changes:kranken/Assets/Code/HomeMenue.cs
             }
             else if (counter == 1)
             {
