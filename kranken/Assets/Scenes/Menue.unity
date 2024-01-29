@@ -258,7 +258,8 @@ MonoBehaviour:
   creditsWindow: {fileID: 1356839167}
   firstLevel: GameScene
   textMeshObj: {fileID: 515321443}
-  fadeToBlack: {fileID: 0}
+  fadeToBlack: {fileID: 463876572}
+  fadeToBlackSpeed: 0.001
 --- !u!114 &198865940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -649,7 +650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 0.15686275, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

@@ -15,9 +15,14 @@ public class HomeMenue : MonoBehaviour
     [SerializeField]
     string firstLevel;
     [SerializeField]
-    GameObject textMeshObj,fadeToBlack;
-    
-    
+    GameObject textMeshObj;
+    [SerializeField]
+    private Image fadeToBlack;
+    private bool startFadingToBlack = false;
+    [SerializeField]
+    private float fadeToBlackSpeed;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,24 +32,40 @@ public class HomeMenue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!creditsWindow.GetComponent<Image>().enabled)
+        if (startFadingToBlack)
         {
-            CounterChange(up, -1f);
-            CounterChange(down, 1);
+            if(fadeToBlack.color.a < 255)
+            {
+                fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, fadeToBlack.color.a + fadeToBlackSpeed*Time.deltaTime);
+            }
+            else
+            {
+                SceneManager.LoadScene(firstLevel);
+                SceneManager.UnloadScene("Menue");
+            }
         }
+        else
+        {
+
+            if (!creditsWindow.GetComponent<Image>().enabled)
+            {
+                CounterChange(up, -1f);
+                CounterChange(down, 1);
+            }
         
 
-        if (counter < 0)
-        {
-            counter = buttons.Length - 1;
+            if (counter < 0)
+            {
+                counter = buttons.Length - 1;
+            }
+            else if (counter >= buttons.Length)
+            {
+                counter = 0;
+            }
+            PointerMover(pointer.GetComponent<RectTransform>().position, buttons[(int)counter].GetComponent<RectTransform>().position);
+            Select();
+            //MouseMovePointer();
         }
-        else if (counter >= buttons.Length)
-        {
-            counter = 0;
-        }
-        PointerMover(pointer.GetComponent<RectTransform>().position, buttons[(int)counter].GetComponent<RectTransform>().position);
-        Select();
-        //MouseMovePointer();
     }
     private void CounterChange(KeyCode key,float amount)
     {
@@ -63,8 +84,7 @@ public class HomeMenue : MonoBehaviour
         {
             if(counter == 0)
             {
-               SceneManager.LoadScene(firstLevel);
-               SceneManager.UnloadScene("Menue");
+                startFadingToBlack = true;
             }
             else if (counter == 1)
             {
