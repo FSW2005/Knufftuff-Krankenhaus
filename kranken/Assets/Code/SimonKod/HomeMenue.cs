@@ -34,7 +34,7 @@ public class HomeMenue : MonoBehaviour
     {
         if (startFadingToBlack)
         {
-            if(fadeToBlack.color.a < 255)
+            if(fadeToBlack.color.a < 1)
             {
                 fadeToBlack.color = new Color(fadeToBlack.color.r, fadeToBlack.color.g, fadeToBlack.color.b, fadeToBlack.color.a + fadeToBlackSpeed*Time.deltaTime);
             }

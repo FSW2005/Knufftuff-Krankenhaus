@@ -36,18 +36,21 @@ public class SimonsPlayer : MonoBehaviour
         if (Input.GetKeyDown(inputs[5]))
         {
             transform.localScale = new Vector3(1, crouchHight, 1);
+            transform.position -= new Vector3(0, crouchHight, 0);
         }
         if (Input.GetKeyUp(inputs[5]))
         {
             transform.localScale = new Vector3(1, defaultHight, 1);
+            transform.position += new Vector3(0, crouchHight, 0);
+
         }
         Stamina(inputs[4]);
         Movement(inputs[0], transform.forward);
         Movement(inputs[1], -transform.forward);
         Movement(inputs[2], -transform.right);
         Movement(inputs[3], transform.right);
-        rb.velocity =(endVelocity * Time.deltaTime * speed*sprintSpeedMulti);
-        endVelocity = new Vector3(0, 0, 0);
+        rb.velocity =(endVelocity * speed*sprintSpeedMulti);
+        endVelocity = new Vector3(0, rb.velocity.y, 0);
     }
     private void Movement(KeyCode key,Vector3 direction)
     {
