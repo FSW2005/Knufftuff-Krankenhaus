@@ -373,6 +373,7 @@
 "Assets/Code/SimonKod/FirstPersonCamera.cs"
 "Assets/Code/SimonKod/Flashlight.cs"
 "Assets/Code/SimonKod/HomeMenue.cs"
+"Assets/Code/SimonKod/MakeImageFade.cs"
 "Assets/Code/SimonKod/Marulk2.cs"
 "Assets/Code/SimonKod/MarulkSight2.cs"
 "Assets/Code/SimonKod/SimonsPlayer.cs"

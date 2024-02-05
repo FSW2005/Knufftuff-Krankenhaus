@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Animations;
 
 public class Marulk2 : MonoBehaviour
 {
@@ -21,11 +22,16 @@ public class Marulk2 : MonoBehaviour
     //Going to the closest point after following the player
     private float currentBestDistance;
     private bool foundNearestPoint = false;
+
+    //Animation
+    private Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
         agent = gameObject.GetComponent<NavMeshAgent>();
         defaultSpeed = gameObject.GetComponent<NavMeshAgent>().speed;
+        animator = gameObject.GetComponent<Animator>();
         
     }
 
@@ -34,6 +40,7 @@ public class Marulk2 : MonoBehaviour
     {
         if (isStunned)
         {
+            animator.SetTrigger("idle");
             agent.ResetPath();
             followPlayerTimer = 0;
             sawPlayer = false;
@@ -43,6 +50,7 @@ public class Marulk2 : MonoBehaviour
             //When the player is seen
             if (sawPlayer)
             {
+                animator.SetTrigger("run");
                 foundNearestPoint = false;
                 followPlayerTimer = followPlayerFor;
                 sawPlayer = false;
@@ -86,6 +94,7 @@ public class Marulk2 : MonoBehaviour
     }
     private void NormalMovement()
     {
+        animator.SetTrigger("walk");
         if (Mathf.Round(transform.position.x) == Mathf.Round(movementPoints[currentPoint].position.x) && Mathf.Round(transform.position.z) == Mathf.Round(movementPoints[currentPoint].position.z))
         {
             if (isWalingInCircles)
