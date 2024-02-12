@@ -38,6 +38,7 @@ public class Marulk2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        isStunned = GameObject.FindGameObjectWithTag("FlashLight").GetComponent<Flashlight>().enemyStunned;
         if (isStunned)
         {
             animator.SetTrigger("idle");
