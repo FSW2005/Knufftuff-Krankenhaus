@@ -43,8 +43,9 @@ public class SimonsPlayer : MonoBehaviour
             transform.localScale = new Vector3(1, defaultHight, 1);
             transform.position += new Vector3(0, crouchHight, 0);
 
-        }
+        } 
         Stamina(inputs[4]);
+       
         Movement(inputs[0], transform.forward);
         Movement(inputs[1], -transform.forward);
         Movement(inputs[2], -transform.right);

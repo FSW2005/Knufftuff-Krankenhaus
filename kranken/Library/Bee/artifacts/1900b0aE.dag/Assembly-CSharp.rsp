@@ -376,9 +376,11 @@
 "Assets/Code/SimonKod/MakeImageFade.cs"
 "Assets/Code/SimonKod/Marulk2.cs"
 "Assets/Code/SimonKod/MarulkSight2.cs"
+"Assets/Code/SimonKod/Particle/RenderParticlesEffect.cs"
 "Assets/Code/SimonKod/SimonsPlayer.cs"
 "Assets/Code/SimonKod/tileMat.cs"
 "Assets/Code/timeMatGlassWall.cs"
+"Assets/SetPosToUiPos.cs"
 -langversion:9.0
 
 /deterministic
