@@ -9,6 +9,7 @@ public class Marulk2 : MonoBehaviour
     private NavMeshAgent agent;
     [SerializeField] private Transform target;
     [SerializeField] private Transform[] movementPoints;
+    [SerializeField] private GameObject pointsPartent;
     [SerializeField] private bool isWalingInCircles;
     private int currentPoint = 0;
     private float plusOrMinus = 1;
@@ -32,6 +33,7 @@ public class Marulk2 : MonoBehaviour
         agent = gameObject.GetComponent<NavMeshAgent>();
         defaultSpeed = gameObject.GetComponent<NavMeshAgent>().speed;
         animator = gameObject.GetComponent<Animator>();
+        movementPoints = pointsPartent.GetComponentsInChildren<Transform>();
         
     }
 
