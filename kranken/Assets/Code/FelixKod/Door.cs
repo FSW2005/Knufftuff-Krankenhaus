@@ -12,29 +12,29 @@ public class Door : Interact
 
     private AudioSource audioSource;
 
-    // Variable to track if the door is currently in the process of opening or closing
+    // Variabel som håller koll på om dörren håller på att öpnas eller stängas
     private bool isAnimating = false;
 
-    private Quaternion originalRotation; // Store the original rotation of the door
-    private BoxCollider doorCollider; // Reference to the BoxCollider component
+    private Quaternion originalRotation; 
+    private BoxCollider doorCollider; 
 
     void Start()
     {
-        // Find the Animator component on the door
+        // Hittar animations spelaren på dörren (finns inte)
         doorAnimator = GetComponent<Animator>();
         if (doorAnimator == null)
         {
             Debug.LogError("Animator component not found on the door. Add an Animator component.");
         }
 
-        // Add an AudioSource component to the door GameObject
+        // Kan adda en ljudfil till dörren
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.spatialBlend = 1.0f; // Use 3D spatial audio
 
-        // Store the original rotation of the door
+        // Sparar orginala rotationen av dörren
         originalRotation = transform.rotation;
 
-        // Get the BoxCollider component on the door
+        // Väljer BoxCollider komponent av dören
         doorCollider = GetComponent<BoxCollider>();
         if (doorCollider == null)
         {
@@ -42,24 +42,24 @@ public class Door : Interact
         }
     }
 
-    // Override the Interact method to open/close the door
+    // Applicerar "Interactable" på dören så spelaren kan interegera med dörren, öppna/stänga.
     public override void Interactable()
     {
         base.Interactable();
 
-        // Check if the door is currently animating (opening or closing)
+        // Stoppar spelaren från att interigera med dörren under animation spelandet
         if (isAnimating)
         {
             return;
         }
 
-        // Toggle the state of the door (open/close)
+        // Öpen/Stängd dör
         isOpen = !isOpen;
 
-        // Trigger the corresponding animation
+        // Aktivera animation (existerar inte, welp)
         doorAnimator.SetBool("IsOpen", isOpen);
 
-        // Play the corresponding audio clip
+        // Spela respektive ansatta audiofil
         if (isOpen && doorOpenSound != null)
         {
             PlayDoorSound(doorOpenSound);
@@ -69,23 +69,23 @@ public class Door : Interact
             PlayDoorSound(doorCloseSound);
         }
 
-        // Rotate the door by 90 degrees on the Y-axis after the first interaction
+        // Rotera dörren för vid interaktion 90 grader
         if (isOpen && !isAnimating)
         {
             StartCoroutine(RotateDoor(90f));
-            // Disable the BoxCollider when the door is open
+            // BoxCollider inaktiveras då dören öppnas
             doorCollider.enabled = false;
         }
         else if (!isOpen && !isAnimating)
         {
-            // Reset the door to its original rotation on the second interaction
+            // Dörren återvänder til orginalposition efter ännu en interaktion 
             StartCoroutine(RotateDoor(0f));
-            // Enable the BoxCollider when the door is closed
+            // BoxCollider aktiveras då dörren stängs
             doorCollider.enabled = true;
         }
     }
 
-    // Play the door sound with a delay to match the animation duration
+    // Spelar en ljudfil då dörren öppnas 
     void PlayDoorSound(AudioClip sound)
     {
         if (sound != null)
@@ -95,7 +95,7 @@ public class Door : Interact
         }
     }
 
-    // Coroutine to wait for the animation to finish before allowing another interaction
+    // Koden får vänta?
     IEnumerator AnimationDelay()
     {
         isAnimating = true;
@@ -103,7 +103,7 @@ public class Door : Interact
         isAnimating = false;
     }
 
-    // Coroutine to rotate the door smoothly
+    // Kod för att rotera dörren 
     IEnumerator RotateDoor(float targetAngle)
     {
         float duration = 1.0f; // Adjust the rotation duration as needed

@@ -4,100 +4,95 @@ using UnityEngine;
 
 public class NotesInteract : Interact
 {
-    // Additional properties specific to the Notes script can be added here
+    // properties specific to the Notes script can be added here
 
-    // Material to use when the note is highlighted
+    // Material vid highlighted
     public Material highlightMaterial;
 
-    // Original material of the note object
+    // Original material av papperslapp objectet
     private Material originalMaterial;
 
-    // Audio clip to play when interacting with the note
+    // Audiofil att spela vid interaktion med en papperslapp 
     public AudioClip interactAudioClip;
 
-    // Reference to the AudioSource component
+    // Reference AudioSource 
     private AudioSource audioSource;
 
-    // Set the distance threshold for player proximity
+    // Räckvid för interaktion 
     public float proximityDistance = 2.0f;
 
     void Start()
     {
-        // Add an AudioSource component to the GameObject if not already present
+        // Adda Audiofil till GameObjectet (finns ej)
         audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
         {
             audioSource = gameObject.AddComponent<AudioSource>();
         }
 
-        // Set the audio clip for the AudioSource
         audioSource.clip = interactAudioClip;
 
-        // Ensure the AudioSource does not play on awake
         audioSource.playOnAwake = false;
 
-        // Save the original material of the note object
+        // Spara originala materialet av note object
         originalMaterial = GetComponent<Renderer>().material;
     }
 
-    // Override the Interactable method from the base class
+    // Override Interactable method från bas classen
     public override void Interactable()
     {
-        // Call the base Interactable method
+        // Framkalla base Interactable method
         base.Interactable();
 
-        // Play the interaction audio clip
+        // Spela interaction audio 
         PlayInteractionAudio();
 
-        // Check if the player is close enough to the note
+        // Kollar spelarens räckvid till papperslappen
         if (IsPlayerNearNote())
         {
-            // Add the note to the inventory
+            // Adda papperslappen till en inventory
             AddNoteToInventory();
 
-            // Optionally: Remove the note from the scene or handle any other logic
+            // Tar bort note objektet efter interaktion
             Destroy(gameObject);
         }
     }
 
-    // Method to play the interaction audio clip
+    // Method som spelar audio vid interaktion
     private void PlayInteractionAudio()
     {
-        // Check if an audio clip is assigned
+        // Test: audio tillsat till objekt?
         if (interactAudioClip != null)
         {
-            // Play the audio clip
+            // Spela audiofilen
             audioSource.Play();
         }
     }
 
-    // Method to check if the player is near the note
+    // Kollar om spelaren är nära nog till objektet
     private bool IsPlayerNearNote()
     {
-        // Calculate the distance between the player and the note
+        // Distansen mellan spelaren och objektet kalkuleras
         float distanceToPlayer = Vector3.Distance(transform.position, Camera.main.transform.position);
 
-        // Check if the player is within the proximity distance
+        // Kollar om spelaren står tillräckligt nära objektet för en interaktion
         return distanceToPlayer <= proximityDistance;
     }
 
-    // Method to add the note to the inventory
+    // adda objektet till inventory
     private void AddNoteToInventory()
     {
-        // Get the Inventory script attached to the player or wherever it is located
+        // Inventory script  till spelaren (disfunktionell)
         Inventory inventory = FindObjectOfType<Inventory>();
-
+        
         if (inventory != null)
         {
-            // Example: Get information about the note (name, id, icon)
             string noteName = "Example Note";
-            int noteID = 3; // Replace with the actual ID for notes
-            Sprite noteIcon = GetComponent<SpriteRenderer>().sprite; // Replace with the actual way to get the note's icon
+            int noteID = 3; // (Replace) 
+            Sprite noteIcon = GetComponent<SpriteRenderer>().sprite; // (Replace)
 
-            // Add the note to the inventory
+            // Adda objektet åt inventory
             inventory.AddItem(noteName, noteID, noteIcon);
-
-            // Optionally: You can also implement additional UI feedback or logic here
         }
         else
         {
@@ -105,31 +100,31 @@ public class NotesInteract : Interact
         }
     }
 
-    // Highlight the note object when the player is near
+    // Highlight funktion
     void Update()
     {
-        // Check if the player is near the note
+        // Kollar om spelare är nära not objektet
         if (IsPlayerNearNote())
         {
-            // Change the material to the highlightMaterial when the player is near the note
+            // Ändrar materialet om spelaren är det
             GetComponent<Renderer>().material = highlightMaterial;
         }
         else
         {
-            // Reset the material to the originalMaterial when the player is not near the note
+            // Om inte sker ingen ändring med materialet
             GetComponent<Renderer>().material = originalMaterial;
         }
         {
-            // Check if the player is near the note
+            // Kollar om spelare är nära not objektet
             if (IsPlayerNearNote())
             {
-                // Change the material to the highlightMaterial when the player is near the note
+                // Ändrar materialet om spelaren är det
                 Debug.Log("Highlighting");
                 GetComponent<Renderer>().material = highlightMaterial;
             }
             else
             {
-                // Reset the material to the originalMaterial when the player is not near the note
+                // Om inte sker ingen ändring med materialet
                 GetComponent<Renderer>().material = originalMaterial;
             }
         }

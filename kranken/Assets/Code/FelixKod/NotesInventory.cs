@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class NotesInventory : Interact
 {
-    // Reference to the Inventory script
+    // Referencerar Inventory script
     public Inventory inventory;
 
-    // Set the distance threshold for player proximity
+    // Distans threshold för spelar proximity
     public float proximityDistance = 2.0f;
 
     void Start()
     {
-        // Ensure that the required components are assigned
+        // Säkrar kraven för funktionen
         if (inventory == null)
         {
             Debug.LogError("Inventory reference not set in NotesInventory script!");
@@ -21,10 +21,10 @@ public class NotesInventory : Interact
 
     void Update()
     {
-        // Check for player input to put a note into the inventory
+        // Om spelaren trycker på (E) läggs objektet in i Inventory
         if (Input.GetKeyDown(KeyCode.E))
         {
-            // Interact with the note
+            // Interegera med papperslappen
             Interactable();
         }
     }
@@ -32,46 +32,45 @@ public class NotesInventory : Interact
     // Override the Interactable method from the base class
     public override void Interactable()
     {
-        // Call the base Interactable method if it exists in the base class
         base.Interactable();
 
-        // Check if the player is close enough to the note
+        // Nära nog till objektet
         if (IsPlayerNearNote())
         {
-            // Add the note to the inventory
+            // Adda objektet till inventory
             AddNoteToInventory();
 
-            // Remove the note from the scene
+            // Tar objektet bort frpn scenen
             Destroy(gameObject);
         }
     }
 
-    // Method to check if the player is near the note
+    // Nära nog till objektet
     private bool IsPlayerNearNote()
     {
-        // Calculate the distance between the player and the note
+        // Distansen mellan objektet och spelaren kalkuleras
         float distanceToPlayer = Vector3.Distance(transform.position, Camera.main.transform.position);
 
-        // Check if the player is within the proximity distance
+        // proximity distance
         return distanceToPlayer <= proximityDistance;
     }
 
-    // Method to add the note to the inventory
+    // addar objektet till inventory
     private void AddNoteToInventory()
     {
-        // Check if the SpriteRenderer component is present
+        // Kollar om SpriteRenderer component är tilljänlig
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
         if (spriteRenderer != null)
         {
-            // Example: Get information about the note (name, id, icon)
+            // (name, id, icon)
             string noteName = "Example Note";
-            int noteID = 3; // Replace with the actual ID for notes
-            Sprite noteIcon = spriteRenderer.sprite; // Use the SpriteRenderer component
+            int noteID = 3; // (Replace) 
+            Sprite noteIcon = spriteRenderer.sprite; // adda SpriteRenderer component
 
-            // Add the note to the inventory
+            // note --> inventory
             inventory.AddItem(noteName, noteID, noteIcon);
 
-            // Optionally: You can also implement additional UI feedback or logic here
+            // additional UI feedback eller logik nedan
         }
         else
         {

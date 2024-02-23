@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
+// Bossar allt ljud inom spelet, kolt va?
 {
     public static AudioManager instance;
     public AudioSource backgroundMusic;
