@@ -368,11 +368,14 @@
 "Assets/Code/FelixKod/NotesInteract.cs"
 "Assets/Code/FelixKod/NotesInventory.cs"
 "Assets/Code/FelixKod/OutputAudioRecorder.cs"
+"Assets/Code/SimonKod/attackSensor.cs"
+"Assets/Code/SimonKod/changeKeybinds.cs"
 "Assets/Code/SimonKod/EnemyMovement.cs"
 "Assets/Code/SimonKod/EnemySight.cs"
 "Assets/Code/SimonKod/FirstPersonCamera.cs"
 "Assets/Code/SimonKod/Flashlight.cs"
 "Assets/Code/SimonKod/HomeMenue.cs"
+"Assets/Code/SimonKod/keybindDisplay.cs"
 "Assets/Code/SimonKod/MakeImageFade.cs"
 "Assets/Code/SimonKod/Marulk2.cs"
 "Assets/Code/SimonKod/MarulkSight2.cs"
@@ -380,6 +383,7 @@
 "Assets/Code/SimonKod/SimonsPlayer.cs"
 "Assets/Code/SimonKod/tileMat.cs"
 "Assets/Code/timeMatGlassWall.cs"
+"Assets/PauseMenue.cs"
 "Assets/SetPosToUiPos.cs"
 -langversion:9.0
 

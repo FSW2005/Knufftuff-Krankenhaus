@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Animations;
+using System.Linq;
+using UnityEngine.SceneManagement;
+
 
 public class Marulk2 : MonoBehaviour
 {
+    private string currentScene;
     private NavMeshAgent agent;
     [SerializeField] private Transform target;
     [SerializeField] private Transform[] movementPoints;
@@ -27,19 +31,35 @@ public class Marulk2 : MonoBehaviour
     //Animation
     private Animator animator;
 
+    //Attacking
+    public bool isAttacking;
+
     // Start is called before the first frame update
     void Start()
     {
         agent = gameObject.GetComponent<NavMeshAgent>();
         defaultSpeed = gameObject.GetComponent<NavMeshAgent>().speed;
         animator = gameObject.GetComponent<Animator>();
-        movementPoints = pointsPartent.GetComponentsInChildren<Transform>();
+        movementPoints = pointsPartent.GetComponentsInChildren<Transform>().Skip(1).ToArray();
         
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (isAttacking)
+        {
+            animator.SetTrigger("attack");
+            if(animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !animator.IsInTransition(0))
+            {
+                currentScene = SceneManager.GetActiveScene().name;
+                SceneManager.LoadSceneAsync("Menue");
+                SceneManager.UnloadSceneAsync(currentScene);
+            }
+        }
+        else
+        {
+
         isStunned = GameObject.FindGameObjectWithTag("FlashLight").GetComponent<Flashlight>().enemyStunned;
         if (isStunned)
         {
@@ -78,6 +98,7 @@ public class Marulk2 : MonoBehaviour
                     FindNearestPoint();
                 }
                 NormalMovement();
+            }
             }
         }
     }
@@ -138,4 +159,6 @@ public class Marulk2 : MonoBehaviour
             }
         }
     }
+
+    
 }

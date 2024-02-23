@@ -26,7 +26,7 @@ public class HomeMenue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
@@ -76,7 +76,7 @@ public class HomeMenue : MonoBehaviour
     }
     private void PointerMover(Vector3 pointerPos,Vector3 buttonPos)
     {
-        pointer.GetComponent<RectTransform>().position = new Vector3(pointerPos.x, buttonPos.y, pointerPos.z);
+        pointer.GetComponent<RectTransform>().position = Vector3.MoveTowards(pointerPos, new Vector3(pointerPos.x, buttonPos.y, pointerPos.z),10);
     }
     private void Select()
     {

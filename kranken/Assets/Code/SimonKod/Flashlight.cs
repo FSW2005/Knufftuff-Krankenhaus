@@ -15,7 +15,7 @@ public class Flashlight : MonoBehaviour
     public bool enemyStunned;
     private bool flashlightOn = true;
     [SerializeField]
-    private KeyCode key;
+    public KeyCode key;
     private Light light;
 
     // Start is called before the first frame update

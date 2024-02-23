@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class SimonsPlayer : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class SimonsPlayer : MonoBehaviour
     private float speed,sprintSpeed,maxSprintDuration, crouchHight;
     private float sprintDurationCounter,sprintSpeedMulti=1,defaultHight;
     [SerializeField]
-    private KeyCode[] inputs;
+    public KeyCode[] inputs;
     private Vector3 endVelocity;
     [SerializeField]
     private Slider slider;
@@ -33,6 +34,7 @@ public class SimonsPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      
         if (Input.GetKeyDown(inputs[5]))
         {
             transform.localScale = new Vector3(1, crouchHight, 1);
